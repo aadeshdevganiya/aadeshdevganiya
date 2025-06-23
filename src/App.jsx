@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./component/Navbar";
 import HomeBanner from "./component/HomeBanner";
+
 import "./App.css";
 
 function App() {

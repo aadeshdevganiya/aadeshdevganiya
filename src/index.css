@@ -1,14 +1,21 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "proximanova";
+  src: url(assets/fonts/ProximaNova.ttc);
+}
+
 @theme {
   --color-primary: #B13BFF;
-  --color-secondary: #090040;
+  /* --color-secondary: #090040; */
+  --color-secondary: #030021;
   --color-third: #471396;
   --color-yellow: #FFCC00;
+  --font-primary: "proximanova"
 }
 
 body {
-  @apply bg-secondary
+  @apply bg-secondary font-primary
 }
 
 .social-icons li a svg {

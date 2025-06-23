@@ -4,8 +4,8 @@ import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaFacebookF, FaLinkedinIn, FaGoogle } from "react-icons/fa";
 import Tilt from "react-parallax-tilt";
 import { Fade } from "react-awesome-reveal";
-import Typing from "../assets/js/typing"; // Adjust path as necessary
-import Particle from "../assets/js/particle"; // Adjust path as necessary
+import Typing from "../assets/js/typing";
+import Particle from "../assets/js/particle"; 
 import profileImg from "../assets/images/profile.png";
 
 const Home = () => {
@@ -36,7 +36,7 @@ const Home = () => {
             <ul className="social-icons flex justify-center md:justify-start space-x-4 mt-4">
               <li>
                 <a
-                  href="#"
+                  href="https://github.com/aadeshdevganiya"
                   target="_blank"
                   rel="noreferrer"
                   className="text-primary text-2xl xl:text-3xl"
@@ -46,7 +46,7 @@ const Home = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/aadesh-devganiya/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-primary text-2xl xl:text-3xl"
@@ -56,7 +56,7 @@ const Home = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/_aadesh__devganiyaa__24_?igsh=MXZ5NnJuYTVxN2k2YQ=="
                   target="_blank"
                   rel="noreferrer"
                   className="text-primary text-2xl xl:text-3xl"
@@ -66,7 +66,7 @@ const Home = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/aadesh.devganiya?mibextid=ZbWKwL#"
                   target="_blank"
                   rel="noreferrer"
                   className="text-primary text-2xl xl:text-3xl"
