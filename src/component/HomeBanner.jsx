@@ -36,7 +36,7 @@ const Home = () => {
             <ul className="social-icons flex justify-center md:justify-start space-x-4 mt-4">
               <li>
                 <a
-                  href="https://github.com/MD-MAFUJUL-HASAN"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                   className="text-primary text-2xl xl:text-3xl"
@@ -46,7 +46,7 @@ const Home = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/md-mafujul-hasan/"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                   className="text-primary text-2xl xl:text-3xl"
@@ -56,7 +56,7 @@ const Home = () => {
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/_md_mafujul_hasan_/"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                   className="text-primary text-2xl xl:text-3xl"
@@ -66,7 +66,7 @@ const Home = () => {
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/mh.tonmoy.13"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                   className="text-primary text-2xl xl:text-3xl"
