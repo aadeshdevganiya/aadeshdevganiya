@@ -10,8 +10,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full px-4 py-3 bg-secondary text-white">
-      <div className="max-w-7xl mx-auto flex flex-row justify-between items-center">
+    <nav className="w-full  py-3 bg-secondary text-white">
+      <div className="container mx-auto px-3.5 flex flex-row justify-between items-center">
         {/* Logo */}
         <div className="logo z-50">
           <a href="/" className="flex items-center">

@@ -13,9 +13,9 @@ const Home = () => {
     <div id="home" className="w-full relative">
       <Particle />
       <div className="container mx-auto px-3.5 py-12">
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col gap-2 md:flex-row items-center">
           {/* Left Section */}
-          <div className="md:w-2/3 w-full text-center md:text-left space-y-6 sm:px-2">
+          <div className="md:w-2/3 w-full text-center md:text-left space-y-4 sm:space-y-6 ">
             <h1 className="text-4xl sm:text-6xl xl:text-8xl font-bold text-white">
               Hi There!{" "}
               <span role="img" aria-labelledby="wave" className="inline-block">
