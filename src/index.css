@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #B13BFF;
+  --color-secondary: #090040;
+  --color-third: #471396;
+  --color-yellow: #FFCC00;
+}
+
+body {
+  @apply bg-secondary
+}
+
+.social-icons li a svg {
+  @apply bg-white p-1 xl:p-1.5 rounded-md
+}

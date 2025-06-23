@@ -1,0 +1,98 @@
+// Home.jsx
+import React from "react";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { FaFacebookF, FaLinkedinIn, FaGoogle } from "react-icons/fa";
+import Tilt from "react-parallax-tilt";
+import { Fade } from "react-awesome-reveal";
+import Typing from "../assets/js/typing"; // Adjust path as necessary
+import Particle from "../assets/js/particle"; // Adjust path as necessary
+import profileImg from "../assets/images/profile.png";
+
+const Home = () => {
+  return (
+    <div id="home" className="w-full relative">
+      <Particle />
+      <div className="container mx-auto px-3.5 py-12">
+        <div className="flex flex-col md:flex-row items-center">
+          {/* Left Section */}
+          <div className="md:w-2/3 w-full text-center md:text-left space-y-6 sm:px-2">
+            <h1 className="text-4xl sm:text-6xl xl:text-8xl font-bold text-white">
+              Hi There!{" "}
+              <span role="img" aria-labelledby="wave" className="inline-block">
+                👋🏻
+              </span>
+            </h1>
+            <h1 className="text-2xl sm:text-4xl xl:text-5xl font-semibold text-white">
+              I'M{" "}
+              <span className="text-primary font-bold">
+                AD AADESH DEVGANIYA
+              </span>
+            </h1>
+            <div className="text-xl sm:text-2xl text-primary font-semibold">
+              <Typing />
+            </div>
+
+            {/* Social Icons */}
+            <ul className="social-icons flex justify-center md:justify-start space-x-4 mt-4">
+              <li>
+                <a
+                  href="https://github.com/MD-MAFUJUL-HASAN"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-primary text-2xl xl:text-3xl"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/md-mafujul-hasan/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-primary text-2xl xl:text-3xl"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/_md_mafujul_hasan_/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-primary text-2xl xl:text-3xl"
+                >
+                  <AiFillInstagram />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/mh.tonmoy.13"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-primary text-2xl xl:text-3xl"
+                >
+                  <FaFacebookF />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Right Section */}
+          <div className="md:w-1/3 w-full mt-10 md:mt-0 flex justify-center">
+            <Tilt>
+              <Fade>
+                <img
+                  src={profileImg}
+                  alt="Profile"
+                  className="w-full max-w-xs rounded-lg shadow-lg"
+                />
+              </Fade>
+            </Tilt>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
