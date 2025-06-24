@@ -43,12 +43,12 @@ export default function Navbar() {
           ></span>
           <span
             className={`block absolute h-0.5 w-6 bg-white rounded transition-all duration-500 ease-in-out ${
-              isMenuOpen ? "w-0" : "translate-y-0"
+              isMenuOpen ? "!w-0" : "translate-y-0"
             }`}
           ></span>
           <span
             className={`block absolute h-0.5 w-6 bg-white rounded transition-all duration-500 ease-in-out ${
-              isMenuOpen ? "-rotate-45" : "translate-y-1.5"
+              isMenuOpen ? "-rotate-45" : "translate-y-1.5"d
             }`}
           ></span>
         </div>
