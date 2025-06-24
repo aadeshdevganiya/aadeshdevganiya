@@ -22,22 +22,24 @@ export default function About() {
       <div className="container mx-auto px-3.5">
         <CommonHeading headingname="About Me" />
 
-        <ul className="flex border-b mt-3 flex-nowrap whitespace-nowrap overflow-x-auto">
-          {tabs.map((tab) => (
-            <li key={tab.key} className="flex-1 text-center">
-              <button
-                onClick={() => setActiveTab(tab.key)}
-                className={`w-full py-2 px-4 text-base sm:text-lg font-bold cursor-pointer ${
-                  activeTab === tab.key
-                    ? "text-primary bg-white rounded-tl-sm rounded-tr-sm"
-                    : "hover:text-primary"
-                }`}
-              >
-                {tab.name}
-              </button>
-            </li>
-          ))}
-        </ul>
+        <div className="overflow-x-auto pb-1 scrollbar-color-style">
+          <ul className="flex border-b mt-3 flex-nowrap whitespace-nowrap ">
+            {tabs.map((tab) => (
+              <li key={tab.key} className="flex-1 text-center">
+                <button
+                  onClick={() => setActiveTab(tab.key)}
+                  className={`w-full py-2 px-4 text-base sm:text-lg font-bold cursor-pointer ${
+                    activeTab === tab.key
+                      ? "text-primary bg-white rounded-tl-sm rounded-tr-sm"
+                      : "hover:text-primary"
+                  }`}
+                >
+                  {tab.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <div className="mt-4">
           {activeTab === "about" && (

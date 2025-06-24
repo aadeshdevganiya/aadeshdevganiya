@@ -21,3 +21,16 @@ body {
 .social-icons li a svg {
   @apply bg-white p-1 xl:p-1.5 rounded-md
 }
+
+.scrollbar-color-style::-webkit-scrollbar {
+  @apply w-2 h-2
+}
+.scrollbar-color-style::-webkit-scrollbar-track {
+  @apply bg-transparent
+}
+.scrollbar-color-style::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full border-2 border-transparent bg-clip-content
+}
+.scrollbar-color-style::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary
+}
