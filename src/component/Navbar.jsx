@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import profileImg from "../assets/images/profile.png";
 import CommonButton from "./CommonButton";
 
@@ -9,12 +10,16 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <nav className="w-full  py-3 bg-secondary text-white">
-      <div className="container mx-auto px-3.5 flex flex-row justify-between items-center">
+    <nav className="w-full py-3 bg-secondary text-white">
+      <div className="container mx-auto px-3.5 flex justify-between items-center">
         {/* Logo */}
-        <div className="logo z-50">
-          <a href="/" className="flex items-center">
+        <div className="z-50">
+          <Link to="/" className="flex items-center">
             <img
               src={profileImg}
               alt="brand"
@@ -23,67 +28,83 @@ export default function Navbar() {
             <h5 className="ml-5 uppercase font-medium text-lg text-white">
               Aadesh Devganiya
             </h5>
-          </a>
+          </Link>
         </div>
 
-        {/* Burger Menu */}
+        {/* Burger Menu (Mobile) */}
         <div
           onClick={toggleMenu}
           className="lg:hidden z-50 flex flex-col justify-center items-center w-8 h-8 cursor-pointer relative"
         >
           <span
-            className={`block absolute h-0.5 w-6 bg-white rounded   transition-all duration-500 ease-in-out ${
+            className={`block absolute h-0.5 w-6 bg-white rounded transition-all duration-500 ease-in-out ${
               isMenuOpen ? "rotate-45" : "-translate-y-1.5"
             }`}
           ></span>
           <span
-            className={`block absolute h-0.5 w-6 bg-white rounded  transition-all duration-500 ease-in-out ${
-              isMenuOpen ? "!w-0" : "translate-y-0"
+            className={`block absolute h-0.5 w-6 bg-white rounded transition-all duration-500 ease-in-out ${
+              isMenuOpen ? "w-0" : "translate-y-0"
             }`}
           ></span>
           <span
-            className={`block absolute h-0.5 w-6 bg-white rounded  transition-all duration-500 ease-in-out ${
+            className={`block absolute h-0.5 w-6 bg-white rounded transition-all duration-500 ease-in-out ${
               isMenuOpen ? "-rotate-45" : "translate-y-1.5"
             }`}
           ></span>
         </div>
 
         {/* Nav Menu */}
-        <nav
+        <div
           className={`fixed lg:static top-0 right-0 bottom-0 w-full sm:w-1/2 lg:w-auto h-screen lg:h-auto bg-secondary lg:bg-transparent px-7 pt-20 lg:pt-0 z-40 transition-all duration-300 ease-in-out ${
             isMenuOpen ? "block" : "hidden lg:block"
           }`}
         >
           <ul className="flex flex-col lg:flex-row h-full lg:h-auto font-medium gap-6 lg:items-center lg:gap-10 xl:gap-11 py-4 lg:px-9">
             <li>
-              <a href="index.html" className="hover:text-primary">
+              <Link to="/" onClick={closeMenu} className="hover:text-primary">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="pricing.html" className="hover:text-primary">
+              <Link
+                to="/About"
+                onClick={closeMenu}
+                className="hover:text-primary"
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="faq.html" className="hover:text-primary">
+              <Link
+                to="/about/technicalskill"
+                onClick={closeMenu}
+                className="hover:text-primary"
+              >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="contact.html" className="hover:text-primary">
+              <Link
+                to="/project"
+                onClick={closeMenu}
+                className="hover:text-primary"
+              >
                 Project
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="try-free.html" className="hover:text-primary">
-                Contact us
-              </a>
+              <Link
+                to="/contact"
+                onClick={closeMenu}
+                className="hover:text-primary"
+              >
+                Contact Us
+              </Link>
             </li>
           </ul>
-        </nav>
+        </div>
 
-        {/* CTA Button */}
+        {/* CTA Button (Desktop Only) */}
         <div className="hidden lg:block">
           <CommonButton buttonName="Contact us" />
         </div>

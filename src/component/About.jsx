@@ -1,59 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import CommonHeading from "./CommonHeading";
+import AboutContent from "./AboutContent";
+import Skills from "./Skills";
+import Journey from "./Journey";
+import Ranking from "./Ranking";
+import SocialMedia from "./SocialMedia";
 
 export default function About() {
+  const tabs = [
+    { name: "About", key: "about" },
+    { name: "Skills", key: "skills" },
+    { name: "Journey", key: "journey" },
+    { name: "Ranking", key: "ranking" },
+    { name: "Social Media", key: "socialmedia" },
+  ];
+
+  const [activeTab, setActiveTab] = useState("about");
+
   return (
-    <div className="pb-20">
+    <div className="pb-20" id="About">
       <div className="container mx-auto px-3.5">
-        <CommonHeading headingname="About me" />
-        <div className="w-full mt-3 flex flex-col">
-          <div>
-            <ul className="flex border-b justify-between">
-              <li className="flex-1 text-center">
-                <Link
-                  to="/"
-                  className="inline-block py-2 px-4 text-lg font-bold text-blue-600 border-b-2 border-blue-600"
-                >
-                  About
-                </Link>
-              </li>
-              <li className="flex-1 text-center">
-                <Link
-                  to="/technicalskill"
-                  className="inline-block py-2 px-4 text-lg font-bold hover:text-blue-600"
-                >
-                  Skills
-                </Link>
-              </li>
-              <li className="flex-1 text-center">
-                <Link
-                  to="/educationjourney"
-                  className="inline-block py-2 px-4 text-lg font-bold hover:text-blue-600"
-                >
-                  Journey
-                </Link>
-              </li>
-              <li className="flex-1 text-center">
-                <Link
-                  to="/ranking"
-                  className="inline-block py-2 px-4 text-lg font-bold hover:text-blue-600"
-                >
-                  Ranking
-                </Link>
-              </li>
-              <li className="flex-1 text-center">
-                <Link
-                  to="/socialmedia"
-                  className="inline-block py-2 px-4 text-lg font-bold hover:text-blue-600"
-                >
-                  Social Media
-                </Link>
-              </li>
-            </ul>
-            <div className="mt-4">
-              <Outlet />
+        <CommonHeading headingname="About Me" />
+
+        <ul className="flex border-b mt-3 flex-nowrap whitespace-nowrap overflow-x-auto">
+          {tabs.map((tab) => (
+            <li key={tab.key} className="flex-1 text-center">
+              <button
+                onClick={() => setActiveTab(tab.key)}
+                className={`w-full py-2 px-4 text-base sm:text-lg font-bold cursor-pointer ${
+                  activeTab === tab.key
+                    ? "text-primary bg-white rounded-tl-sm rounded-tr-sm"
+                    : "hover:text-primary"
+                }`}
+              >
+                {tab.name}
+              </button>
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-4">
+          {activeTab === "about" && (
+            <div>
+              <AboutContent />
             </div>
-          </div>
+          )}
+          {activeTab === "skills" && (
+            <div>
+              <Skills />
+            </div>
+          )}
+          {activeTab === "journey" && (
+            <div>
+              <Journey />
+            </div>
+          )}
+          {activeTab === "ranking" && (
+            <div>
+              <Ranking />
+            </div>
+          )}
+          {activeTab === "socialmedia" && (
+            <div>
+              <SocialMedia />
+            </div>
+          )}
         </div>
       </div>
     </div>
