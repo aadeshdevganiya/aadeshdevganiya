@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import profileImg from "../assets/images/profile.png";
 import CommonButton from "./CommonButton";
@@ -13,6 +13,14 @@ export default function Navbar() {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  // 🚫 Disable scroll when menu is open
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMenuOpen]);
 
   return (
     <nav className="w-full py-3 bg-secondary text-white">
@@ -31,7 +39,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Burger Menu (Mobile) */}
+        {/* Burger Menu */}
         <div
           onClick={toggleMenu}
           className="lg:hidden z-50 flex flex-col justify-center items-center w-8 h-8 cursor-pointer relative"
@@ -55,7 +63,7 @@ export default function Navbar() {
 
         {/* Nav Menu */}
         <div
-          className={`fixed lg:static top-0 right-0 bottom-0 w-full sm:w-1/2 lg:w-auto h-screen lg:h-auto bg-secondary lg:bg-transparent px-7 pt-20 lg:pt-0 z-40 transition-all duration-300 ease-in-out ${
+          className={`fixed lg:static top-0 right-0 bottom-0 w-full sm:w-1/2 lg:w-auto bg-secondary lg:bg-transparent px-7 pt-20 lg:pt-0 z-40 transition-all duration-300 ease-in-out ${
             isMenuOpen ? "block" : "hidden lg:block"
           }`}
         >
@@ -92,19 +100,13 @@ export default function Navbar() {
                 Project
               </Link>
             </li>
-            <li>
-              <Link
-                to="/contact"
-                onClick={closeMenu}
-                className="hover:text-primary"
-              >
-                Contact Us
-              </Link>
-            </li>
+            <div className="block lg:hidden mt-2">
+              <CommonButton buttonName="Contact us" />
+            </div>
           </ul>
         </div>
 
-        {/* CTA Button (Desktop Only) */}
+        {/* CTA Button */}
         <div className="hidden lg:block">
           <CommonButton buttonName="Contact us" />
         </div>
