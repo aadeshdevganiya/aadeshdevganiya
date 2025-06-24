@@ -8,6 +8,7 @@ import Typing from "../assets/js/typing";
 import Particle from "../assets/js/particle";
 import profileImg from "../assets/images/profile.png";
 import About from "./About";
+import Project from "./Project";
 
 const Home = () => {
   return (
@@ -28,12 +29,12 @@ const Home = () => {
                   👋🏻
                 </span>
               </h1>
-              <h1 className="text-2xl sm:text-4xl xl:text-5xl font-semibold text-white">
+              <h2 className="text-2xl sm:text-4xl xl:text-5xl font-semibold text-white">
                 I'M{" "}
                 <span className="text-primary font-bold">
                   AD AADESH DEVGANIYA
                 </span>
-              </h1>
+              </h2>
               <div className="text-xl sm:text-2xl text-primary font-semibold">
                 <Typing />
               </div>
@@ -99,6 +100,7 @@ const Home = () => {
         </div>
       </div>
       <About />
+      <Project />
     </>
   );
 };

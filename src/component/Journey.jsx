@@ -13,9 +13,9 @@ export default function EducationJourney() {
     <div className="mt-8 md:px-12 lg:px-20">
       {/* Title */}
       <div className="text-center mb-5 sm:mb-8">
-        <h1 className="text-2xl md:text-4xl font-bold text-white">
+        <h2 className="text-2xl md:text-4xl font-bold text-white">
           Qualification Journey
-        </h1>
+        </h2>
       </div>
 
       {/* Timeline */}
