@@ -15,7 +15,7 @@
 }
 
 body {
-  @apply bg-secondary font-primary
+  @apply bg-secondary text-white font-primary
 }
 
 .social-icons li a svg {

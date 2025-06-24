@@ -5,18 +5,18 @@ import { FaFacebookF, FaLinkedinIn, FaGoogle } from "react-icons/fa";
 import Tilt from "react-parallax-tilt";
 import { Fade } from "react-awesome-reveal";
 import Typing from "../assets/js/typing";
-import Particle from "../assets/js/particle"; 
+import Particle from "../assets/js/particle";
 import profileImg from "../assets/images/profile.png";
 
 const Home = () => {
   return (
     <div id="home" className="w-full relative">
       <Particle />
-      <div className="container mx-auto px-3.5 py-12">
+      <div className="container mx-auto px-3.5 py-20">
         <div className="flex flex-col gap-2 md:flex-row items-center">
           {/* Left Section */}
           <div className="md:w-2/3 w-full text-center md:text-left space-y-4 sm:space-y-6 ">
-            <h1 className="text-4xl sm:text-6xl xl:text-8xl font-bold text-white">
+            <h1 className="text-4xl sm:text-6xl xl:text-7xl font-bold text-white">
               Hi There!{" "}
               <span role="img" aria-labelledby="wave" className="inline-block">
                 👋🏻
