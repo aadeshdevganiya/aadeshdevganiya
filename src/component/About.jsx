@@ -3,7 +3,6 @@ import CommonHeading from "./CommonHeading";
 import AboutContent from "./AboutContent";
 import Skills from "./Skills";
 import Journey from "./Journey";
-import Ranking from "./Ranking";
 import SocialMedia from "./SocialMedia";
 
 export default function About() {
@@ -11,7 +10,6 @@ export default function About() {
     { name: "About", key: "about" },
     { name: "Skills", key: "skills" },
     { name: "Journey", key: "journey" },
-    { name: "Ranking", key: "ranking" },
     { name: "Social Media", key: "socialmedia" },
   ];
 
@@ -23,7 +21,7 @@ export default function About() {
         <CommonHeading headingname="About Me" />
 
         <div className="overflow-x-auto pb-1 scrollbar-color-style">
-          <ul className="flex w-fit sm:w-full border-b mt-3 flex-nowrap whitespace-nowrap ">
+          <ul className="flex w-full border-b mt-3 flex-nowrap whitespace-nowrap ">
             {tabs.map((tab) => (
               <li key={tab.key} className="flex-1 text-center">
                 <button
@@ -55,11 +53,6 @@ export default function About() {
           {activeTab === "journey" && (
             <div>
               <Journey />
-            </div>
-          )}
-          {activeTab === "ranking" && (
-            <div>
-              <Ranking />
             </div>
           )}
           {activeTab === "socialmedia" && (
