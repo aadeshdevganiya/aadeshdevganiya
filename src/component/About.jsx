@@ -23,7 +23,7 @@ export default function About() {
         <CommonHeading headingname="About Me" />
 
         <div className="overflow-x-auto pb-1 scrollbar-color-style">
-          <ul className="flex w-fit border-b mt-3 flex-nowrap whitespace-nowrap ">
+          <ul className="flex w-fit sm:w-full border-b mt-3 flex-nowrap whitespace-nowrap ">
             {tabs.map((tab) => (
               <li key={tab.key} className="flex-1 text-center">
                 <button
