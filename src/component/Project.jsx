@@ -37,7 +37,7 @@ export default function () {
   return (
     <section className="py-12 " id="about">
       <div className="container mx-auto px-3.5">
-        <h2 class="text-4xl sm:text-6xl xl:text-7xl mb-5 sm:mb-10 font-bold text-white">
+        <h2 className="text-4xl sm:text-6xl xl:text-7xl mb-5 sm:mb-10 font-bold text-white">
           Projects
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -86,13 +86,13 @@ export default function () {
         </div>
 
         <div className="mt-10 text-center">
-          <Link to="/projectspage">
-            {/* <button className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition">
+          {/* <Link to="/projectspage"> */}
+          {/* <button className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition">
               View All
               <HiArrowRight />
             </button> */}
-            <CommonButton buttonName="View all" />
-          </Link>
+          <CommonButton buttonName="View all" />
+          {/* </Link> */}
         </div>
       </div>
     </section>

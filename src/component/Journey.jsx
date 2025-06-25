@@ -6,7 +6,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@mui/icons-material/School";
 import StarIcon from "@mui/icons-material/Star";
-import { Link } from "react-router-dom";
 
 export default function EducationJourney() {
   return (
