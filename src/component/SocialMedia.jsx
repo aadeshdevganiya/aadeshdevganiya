@@ -5,7 +5,7 @@ import {
   AiFillGithub,
   AiFillLinkedin,
 } from "react-icons/ai";
-import Zoom from "react-reveal/Zoom";
+import { Zoom } from "react-awesome-reveal";
 
 export default function SocialMedia() {
   return (
@@ -22,7 +22,7 @@ export default function SocialMedia() {
           rel="noreferrer"
           className="text-white text-7xl sm:text-8xl p-5 rounded-md bg-primary hover:scale-110 transition duration-300"
         >
-          <Zoom cascade>
+          <Zoom triggerOnce>
             <AiOutlineInstagram />
           </Zoom>
         </a>
@@ -33,7 +33,7 @@ export default function SocialMedia() {
           rel="noreferrer"
           className="text-white text-7xl sm:text-8xl p-5 rounded-md bg-primary hover:scale-110 transition duration-300"
         >
-          <Zoom cascade>
+          <Zoom triggerOnce>
             <AiFillFacebook />
           </Zoom>
         </a>
@@ -44,7 +44,7 @@ export default function SocialMedia() {
           rel="noreferrer"
           className="text-white text-7xl sm:text-8xl p-5 rounded-md bg-primary hover:scale-110 transition duration-300"
         >
-          <Zoom cascade>
+          <Zoom triggerOnce>
             <AiFillGithub />
           </Zoom>
         </a>
@@ -55,7 +55,7 @@ export default function SocialMedia() {
           rel="noreferrer"
           className="text-white text-7xl sm:text-8xl p-5 rounded-md bg-primary hover:scale-110 transition duration-300"
         >
-          <Zoom cascade>
+          <Zoom triggerOnce>
             <AiFillLinkedin />
           </Zoom>
         </a>
