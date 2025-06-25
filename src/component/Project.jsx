@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaCode, FaEye } from "react-icons/fa";
-import { HiArrowRight } from "react-icons/hi";
 import portfolio from "../assets/images/portfolio.png";
 import karmainfotech from "../assets/images/karmainfotech.png";
 import textutils from "../assets/images/textutils.png";
@@ -71,14 +70,14 @@ export default function () {
 
                 {/* View Button */}
                 <div className="mt-4">
-                  <a
+                  <Link
                     href={project.link}
                     target="_blank"
                     rel="noreferrer"
                     className="text-primary text-lg transition-transform duration-300 group-hover:translate-x-[6px] flex justify-center gap-2 items-center font-[proximanova]"
                   >
                     View <FaEye title="View Project" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
