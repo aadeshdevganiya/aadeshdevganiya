@@ -9,6 +9,7 @@ import Particle from "../assets/js/particle";
 import profileImg from "../assets/images/profile.png";
 import About from "./About";
 import Project from "./Project";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -101,6 +102,7 @@ const Home = () => {
       </div>
       <About />
       <Project />
+      <Contact />
     </>
   );
 };

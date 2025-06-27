@@ -5,6 +5,7 @@ import portfolio from "../assets/images/portfolio.png";
 import karmainfotech from "../assets/images/karmainfotech.png";
 import textutils from "../assets/images/textutils.png";
 import CommonButton from "./CommonButton";
+import CommonHeading from "./CommonHeading";
 // import hd from "../../images/hd.png";
 // import pp from "../../images/portfolio.png";
 
@@ -19,14 +20,14 @@ const projects = [
   {
     title: "KarmaInfotech",
     img: karmainfotech,
-    desc: "Use of AI and Machine Learning to help predict heart disease...",
+    desc: "User-friendly interface – Clean, responsive design built with HTML, CSS, and JavaScript.",
     tech: "HTML, CSS, JavaScript",
     link: "https://karmainfotech.vercel.app/",
   },
   {
     title: "Textutils",
     img: textutils,
-    desc: "Use of AI and Machine Learning to help predict heart disease...",
+    desc: "A React-based tool to analyze and transform text—convert cases, remove spaces, count words, and more.",
     tech: "React , css",
     link: "https://textutils-smoky-seven.vercel.app/",
   },
@@ -34,11 +35,9 @@ const projects = [
 
 export default function () {
   return (
-    <section className="py-12 " id="about">
+    <section className="pb-20" id="about">
       <div className="container mx-auto px-3.5">
-        <h2 className="text-4xl sm:text-6xl xl:text-7xl mb-5 sm:mb-10 font-bold text-white">
-          Projects
-        </h2>
+        <CommonHeading headingname="Projects" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
