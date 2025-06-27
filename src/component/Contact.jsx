@@ -51,7 +51,7 @@ export default function ContactUs() {
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col justify-evenly w-full space-y-4 sm:space-y-6"
+            className="flex flex-col justify-evenly w-full space-y-1 sm:space-y-2"
           >
             <div>
               <label
