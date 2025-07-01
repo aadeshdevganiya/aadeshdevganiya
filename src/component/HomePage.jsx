@@ -100,8 +100,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <About />
-      <Project />
+      <About id="about" />
+      <Project id="project" />
       <Contact />
     </>
   );

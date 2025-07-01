@@ -23,7 +23,7 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   return (
-    <nav className="w-full py-3 bg-secondary text-white">
+    <nav className="w-full py-3 text-white ">
       <div className="container mx-auto px-3.5 flex justify-between items-center">
         {/* Logo */}
         <div className="z-50">
@@ -74,29 +74,17 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link
-                to="/About"
-                onClick={closeMenu}
-                className="hover:text-primary"
-              >
+              <Link to="#" onClick={closeMenu} className="hover:text-primary">
                 About
               </Link>
             </li>
             <li>
-              <Link
-                to="/about/technicalskill"
-                onClick={closeMenu}
-                className="hover:text-primary"
-              >
+              <Link to="#" onClick={closeMenu} className="hover:text-primary">
                 Skills
               </Link>
             </li>
             <li>
-              <Link
-                to="/project"
-                onClick={closeMenu}
-                className="hover:text-primary"
-              >
+              <Link to="#" onClick={closeMenu} className="hover:text-primary">
                 Project
               </Link>
             </li>

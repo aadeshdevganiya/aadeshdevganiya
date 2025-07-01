@@ -35,7 +35,7 @@ const projects = [
 
 export default function () {
   return (
-    <section className="pb-20" id="about">
+    <section className="pb-20">
       <div className="container mx-auto px-3.5">
         <CommonHeading headingname="Projects" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

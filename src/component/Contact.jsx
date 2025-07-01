@@ -51,12 +51,12 @@ export default function ContactUs() {
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col justify-evenly w-full space-y-1 sm:space-y-2"
+            className="flex flex-col justify-evenly w-full space-y-2"
           >
             <div>
               <label
                 htmlFor="name"
-                className="bg-secondary text-light font-semibold text-sm px-2 py-0.5 transform translate-x-3 sm:translate-x-6 translate-y-2 inline-flex w-fit"
+                className="bg-secondary text-white font-semibold text-sm px-2 py-0.5 transform translate-x-3 sm:translate-x-6 translate-y-2 inline-flex w-fit"
               >
                 Full Name
               </label>
@@ -67,14 +67,14 @@ export default function ContactUs() {
                 placeholder="Enter your name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full border border-primary rounded-md px-4 py-2 focus:outline-none placeholder-light focus:ring-2 focus:ring-primary"
+                className="w-full border border-primary rounded-md px-4 py-2.5 sm:py-3 focus:outline-none placeholder-light placeholder:text-sm  focus:ring-primary"
               />
             </div>
 
             <div>
               <label
                 htmlFor="email"
-                className="bg-secondary text-light font-semibold text-sm px-2 py-0.5 transform translate-x-6 translate-y-2 inline-flex w-fit"
+                className="bg-secondary text-white font-semibold text-sm px-2 py-0.5 transform translate-x-3 sm:translate-x-6 translate-y-2 inline-flex w-fit"
               >
                 Email Address
               </label>
@@ -85,14 +85,14 @@ export default function ContactUs() {
                 placeholder="Enter your email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full border border-primary rounded-md px-4 py-2 focus:outline-none focus:ring-2 placeholder-light focus:ring-primary bg-secondary"
+                className="w-full border border-primary rounded-md px-4 py-2.5 sm:py-3 focus:outline-none  placeholder-light placeholder:text-sm focus:ring-primary bg-secondary"
               />
             </div>
 
             <div>
               <label
                 htmlFor="message"
-                className="bg-secondary text-light font-semibold text-sm px-2 py-0.5 transform translate-x-6 translate-y-2 inline-flex w-fit"
+                className="bg-secondary text-white font-semibold text-sm px-2 py-0.5 transform translate-x-3 sm:translate-x-6 translate-y-2 inline-flex w-fit"
               >
                 Message
               </label>
@@ -103,7 +103,7 @@ export default function ContactUs() {
                 placeholder="Enter your message"
                 value={formData.message}
                 onChange={handleChange}
-                className="h-36 w-full resize-none rounded-2xl border border-primary px-3 py-3 outline-none placeholder-light"
+                className="h-36 w-full resize-none rounded-md border border-primary px-4 py-2.5 sm:py-3 outline-none placeholder-light placeholder:text-sm"
               />
             </div>
 
@@ -164,7 +164,6 @@ export default function ContactUs() {
                 allowFullScreen
                 loading="lazy"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.41709466476!2d72.73988496746377!3d21.15934029861164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1750846493615!5m2!1sen!2sin"
-                referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>

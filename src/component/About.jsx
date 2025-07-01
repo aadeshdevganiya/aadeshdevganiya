@@ -16,7 +16,7 @@ export default function About() {
   const [activeTab, setActiveTab] = useState("about");
 
   return (
-    <div className="pb-20" id="About">
+    <div className="pb-20">
       <div className="container mx-auto px-3.5">
         <CommonHeading headingname="About Me" />
 
