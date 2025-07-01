@@ -1,7 +1,6 @@
-// Home.jsx
 import React from "react";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
-import { FaFacebookF, FaLinkedinIn, FaGoogle } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import Tilt from "react-parallax-tilt";
 import { Fade } from "react-awesome-reveal";
 import Typing from "../assets/js/typing";
@@ -18,8 +17,7 @@ const Home = () => {
         <Particle />
         <div className="container mx-auto px-3.5 py-16 sm:py-20">
           <div className="flex flex-col gap-2 md:flex-row items-center">
-            {/* Left Section */}
-            <div className="md:w-2/3 w-full text-center md:text-left space-y-4 sm:space-y-6 ">
+            <div className="md:w-2/3 w-full text-center md:text-left space-y-4 sm:space-y-6">
               <h1 className="text-4xl sm:text-6xl xl:text-7xl font-bold text-white">
                 Hi There!{" "}
                 <span
@@ -39,9 +37,7 @@ const Home = () => {
               <div className="text-xl sm:text-2xl text-primary font-semibold">
                 <Typing />
               </div>
-
-              {/* Social Icons */}
-              <ul className="social-icons flex justify-center md:justify-start space-x-4 mt-4">
+              <ul className="flex justify-center md:justify-start space-x-4 mt-4">
                 <li>
                   <a
                     href="https://github.com/aadeshdevganiya"
@@ -74,7 +70,7 @@ const Home = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.facebook.com/aadesh.devganiya?mibextid=ZbWKwL#"
+                    href="https://www.facebook.com/aadesh.devganiya"
                     target="_blank"
                     rel="noreferrer"
                     className="text-primary text-2xl xl:text-3xl"
@@ -84,14 +80,12 @@ const Home = () => {
                 </li>
               </ul>
             </div>
-
-            {/* Right Section */}
             <div className="md:w-1/3 w-full mt-10 md:mt-0 flex justify-center">
               <Tilt>
                 <Fade>
                   <img
                     src={profileImg}
-                    alt="Profile"
+                    alt="Aadesh Devganiya"
                     className="w-full max-w-xs rounded-lg shadow-lg"
                   />
                 </Fade>
@@ -100,8 +94,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <About id="about" />
-      <Project id="project" />
+
+      <About />
+      <Project />
       <Contact />
     </>
   );

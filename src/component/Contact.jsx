@@ -48,7 +48,6 @@ export default function ContactUs() {
         <CommonHeading headingname="Contact us" />
 
         <div className="grid md:grid-cols-2 gap-10">
-          {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
             className="flex flex-col justify-evenly w-full space-y-2"
@@ -67,7 +66,7 @@ export default function ContactUs() {
                 placeholder="Enter your name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full border border-primary rounded-md px-4 py-2.5 sm:py-3 focus:outline-none placeholder-light placeholder:text-sm  focus:ring-primary"
+                className="w-full border border-primary rounded-md px-4 py-2.5 sm:py-3 focus:outline-none placeholder-light placeholder:text-sm focus:ring-primary"
               />
             </div>
 
@@ -85,7 +84,7 @@ export default function ContactUs() {
                 placeholder="Enter your email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full border border-primary rounded-md px-4 py-2.5 sm:py-3 focus:outline-none  placeholder-light placeholder:text-sm focus:ring-primary bg-secondary"
+                className="w-full border border-primary rounded-md px-4 py-2.5 sm:py-3 focus:outline-none placeholder-light placeholder:text-sm focus:ring-primary bg-secondary"
               />
             </div>
 
@@ -116,7 +115,6 @@ export default function ContactUs() {
             </button>
           </form>
 
-          {/* Contact Details */}
           <div className="flex flex-col justify-evenly space-y-4 sm:space-y-6 md:pl-28 mt-5">
             <div className="flex items-start gap-4">
               <div className="bg-light text-primary rounded-full w-11 h-11 flex items-center justify-center text-xl transition-transform duration-300 hover:scale-110 hover:bg-primary hover:text-light">
@@ -147,16 +145,15 @@ export default function ContactUs() {
                 <HiOutlineLocationMarker />
               </div>
               <a
-                href="https://maps.app.goo.gl/6V6WkiuaTNARAjcd6 "
+                href="https://maps.app.goo.gl/6V6WkiuaTNARAjcd6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow hover:underline mt-2"
               >
-                Surat , Gujarat
+                Surat, Gujarat
               </a>
             </div>
 
-            {/* Google Map */}
             <div className="w-full h-52 mt-4">
               <iframe
                 title="Contact Map"

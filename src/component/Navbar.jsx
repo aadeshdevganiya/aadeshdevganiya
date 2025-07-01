@@ -6,15 +6,9 @@ import CommonButton from "./CommonButton";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-
-  // 🚫 Disable scroll when menu is open
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
     return () => {
@@ -23,14 +17,13 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   return (
-    <nav className="w-full py-3 text-white ">
+    <nav className="w-full py-3 text-white">
       <div className="container mx-auto px-3.5 flex justify-between items-center">
-        {/* Logo */}
         <div className="z-50">
           <Link to="/" className="flex items-center">
             <img
               src={profileImg}
-              alt="brand"
+              alt="Aadesh Devganiya"
               className="w-auto h-auto max-h-10 object-contain"
             />
             <h5 className="ml-5 uppercase font-medium text-lg text-white">
@@ -39,7 +32,6 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Burger Menu */}
         <div
           onClick={toggleMenu}
           className="lg:hidden z-50 flex flex-col justify-center items-center w-8 h-8 cursor-pointer relative"
@@ -61,7 +53,6 @@ export default function Navbar() {
           ></span>
         </div>
 
-        {/* Nav Menu */}
         <div
           className={`fixed lg:static top-0 right-0 bottom-0 w-full sm:w-1/2 lg:w-auto bg-secondary lg:bg-transparent px-7 pt-20 lg:pt-0 z-40 transition-all duration-300 ease-in-out ${
             isMenuOpen ? "block" : "hidden lg:block"
@@ -74,17 +65,29 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={closeMenu} className="hover:text-primary">
+              <Link
+                to="#about"
+                onClick={closeMenu}
+                className="hover:text-primary"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={closeMenu} className="hover:text-primary">
+              <Link
+                to="#skills"
+                onClick={closeMenu}
+                className="hover:text-primary"
+              >
                 Skills
               </Link>
             </li>
             <li>
-              <Link to="#" onClick={closeMenu} className="hover:text-primary">
+              <Link
+                to="#project"
+                onClick={closeMenu}
+                className="hover:text-primary"
+              >
                 Project
               </Link>
             </li>
@@ -94,7 +97,6 @@ export default function Navbar() {
           </ul>
         </div>
 
-        {/* CTA Button */}
         <div className="hidden lg:block">
           <CommonButton buttonName="Contact us" />
         </div>

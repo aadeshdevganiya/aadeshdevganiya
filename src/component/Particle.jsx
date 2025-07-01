@@ -1,17 +1,13 @@
-// src/components/Particle.jsx
-import React from "react";
-import { loadSlim } from "tsparticles-slim";
+import React, { useCallback } from "react";
 import { Particles } from "react-tsparticles";
-import { useCallback } from "react";
+import { loadSlim } from "tsparticles-slim";
 
 export default function Particle() {
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    // optional logging or behavior
-  }, []);
+  const particlesLoaded = useCallback(async () => {}, []);
 
   return (
     <Particles
@@ -21,21 +17,12 @@ export default function Particle() {
       options={{
         fullScreen: { enable: false },
         background: {
-          color: {
-            value: "#ffffff",
-          },
+          color: { value: "#ffffff" },
         },
         particles: {
-          number: {
-            value: 50,
-          },
-          size: {
-            value: 3,
-          },
-          move: {
-            enable: true,
-            speed: 2,
-          },
+          number: { value: 50 },
+          size: { value: 3 },
+          move: { enable: true, speed: 2 },
           links: {
             enable: true,
             color: "#000000",

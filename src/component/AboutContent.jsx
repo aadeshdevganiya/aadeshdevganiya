@@ -1,12 +1,9 @@
-// src/component/AboutContent.jsx
-
 import { Fade, Slide } from "react-awesome-reveal";
 import "@lottiefiles/lottie-player";
 
 export default function AboutContent() {
   return (
     <div className="mt-10 flex flex-col md:flex-row items-center gap-10">
-      {/* Lottie Animation */}
       <div className="w-full md:w-5/12">
         <Slide direction="left">
           <lottie-player
@@ -16,11 +13,11 @@ export default function AboutContent() {
             style={{ width: "90%", height: "90%" }}
             loop
             autoplay
+            title="Aadesh Devganiya Animation"
           ></lottie-player>
         </Slide>
       </div>
 
-      {/* Text Content */}
       <div className="w-full md:w-7/12">
         <Fade duration={3000}>
           <div className="text-base sm:text-lg leading-relaxed text-white space-y-4 sm:space-y-6">

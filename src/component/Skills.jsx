@@ -33,22 +33,21 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="py-5 sm:py-10">
-      <div className="grid gap-3 sm:gap-8 grid-cols-2 md:grid-cols-3 xl:grid-cols-4  mx-auto">
+    <section className="py-10">
+      <div className="grid gap-5 sm:gap-8 grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mx-auto">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="bg-primary text-white rounded-lg shadow-md p-5 flex flex-col items-center hover:scale-105 transition-transform duration-300"
+            className="bg-primary text-white rounded-lg shadow-md p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300"
           >
-            <div className="bg-white w-24 h-24 flex items-center justify-center rounded-full relative overflow-hidden mb-4">
+            <div className="bg-white w-24 h-24 flex items-center justify-center rounded-full overflow-hidden mb-4">
               <img
                 src={skill.img}
                 alt={skill.name}
-                className="w-12 h-12 z-10 object-contain"
+                className="w-12 h-12 object-contain"
               />
-              <div className="absolute top-0 left-0 w-1/2 h-full bg-gray-400 opacity-30 rounded-l-full" />
             </div>
-            <h3 className="text-xl font-semibold">{skill.name}</h3>
+            <h3 className="text-lg font-semibold">{skill.name}</h3>
           </div>
         ))}
       </div>

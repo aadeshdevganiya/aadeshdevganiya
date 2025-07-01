@@ -53,7 +53,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/aadesh.devganiya?mibextid=ZbWKwL#"
+                  href="https://www.facebook.com/aadesh.devganiya"
                   className="text-white hover:text-primary transition"
                   target="_blank"
                   rel="noopener noreferrer"

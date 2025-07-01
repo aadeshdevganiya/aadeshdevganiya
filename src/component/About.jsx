@@ -16,17 +16,24 @@ export default function About() {
   const [activeTab, setActiveTab] = useState("about");
 
   return (
-    <div className="pb-20">
+    <section className="pb-20" id="about">
       <div className="container mx-auto px-3.5">
         <CommonHeading headingname="About Me" />
 
-        <div className="overflow-x-auto pb-1 scrollbar-color-style">
-          <ul className="flex w-full border-b mt-3 flex-nowrap whitespace-nowrap ">
+        <div
+          className="overflow-x-auto pb-1 scrollbar-color-style"
+          role="tablist"
+          aria-label="About Section Tabs"
+        >
+          <ul className="flex w-full border-b mt-3 flex-nowrap whitespace-nowrap">
             {tabs.map((tab) => (
               <li key={tab.key} className="flex-1 text-center">
                 <button
+                  role="tab"
+                  aria-selected={activeTab === tab.key}
+                  aria-controls={`tab-panel-${tab.key}`}
                   onClick={() => setActiveTab(tab.key)}
-                  className={`w-full py-2 px-4 text-base sm:text-lg font-bold cursor-pointer ${
+                  className={`w-full py-2 px-4 text-base sm:text-lg font-bold cursor-pointer transition-colors duration-200 ${
                     activeTab === tab.key
                       ? "text-primary bg-white rounded-tl-sm rounded-tr-sm"
                       : "hover:text-primary"
@@ -41,27 +48,27 @@ export default function About() {
 
         <div className="mt-4">
           {activeTab === "about" && (
-            <div>
+            <div id="tab-panel-about" role="tabpanel">
               <AboutContent />
             </div>
           )}
           {activeTab === "skills" && (
-            <div>
+            <div id="tab-panel-skills" role="tabpanel">
               <Skills />
             </div>
           )}
           {activeTab === "journey" && (
-            <div>
+            <div id="tab-panel-journey" role="tabpanel">
               <Journey />
             </div>
           )}
           {activeTab === "socialmedia" && (
-            <div>
+            <div id="tab-panel-socialmedia" role="tabpanel">
               <SocialMedia />
             </div>
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
