@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <footer className="border-t border-light text-white py-6">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center text-center space-y-4 md:space-y-0">
           <div>
             <h3 className="text-sm md:text-base">
