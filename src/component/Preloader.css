@@ -1,16 +1,4 @@
-
-
-.scan {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .scan .fingerprint {
-  position: relative;
-  width: 300px;
-  height: 380px;
   background: url(../assets/images/preloader-image.png);
   background-size: 300px;
 }
@@ -83,5 +71,35 @@
 
   50% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .scan .fingerprint {
+    background: url(../assets/images/preloader-image.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+  }
+
+  .scan .fingerprint::before {
+    background-size: 150px;
+    background-repeat: no-repeat;
+  }
+
+  .scan h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+
+  @keyframes animate_line {
+
+    0%,
+    100% {
+      top: 0%;
+    }
+
+    50% {
+      top: 85%;
+    }
   }
 }
