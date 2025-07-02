@@ -37,7 +37,7 @@
   background: #B13BFF;
   border-radius: 8px;
   filter: drop-shadow(0 0 20px #B13BFF) drop-shadow(0 0 60px #B13BFF);
-  animation: animate_line 4s ease-in-out infinite;
+  animation: animate_line 3s ease-in-out infinite;
 }
 
 @keyframes animate_line {

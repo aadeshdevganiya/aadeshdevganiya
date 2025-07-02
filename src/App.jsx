@@ -8,7 +8,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000); // 2s is enough
+    const timer = setTimeout(() => setLoading(false), 3000); // Preloader for 3 seconds
     return () => clearTimeout(timer);
   }, []);
 
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main role="main">
+      <main role="main" className="fade-in">
         <HomePage />
       </main>
       <Footer />
