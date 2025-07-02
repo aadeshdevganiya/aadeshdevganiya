@@ -61,7 +61,7 @@ export default function Projects() {
                   {project.tech}
                 </div>
 
-                {/* <div className="mt-4">
+                <div className="mt-4">
                   <a
                     href={project.link}
                     target="_blank"
@@ -70,15 +70,15 @@ export default function Projects() {
                   >
                     View <FaEye />
                   </a>
-                </div> */}
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        {/* <div className="mt-10 text-center">
           <CommonButton buttonName="View all" />
-        </div>
+        </div> */}
       </div>
     </section>
   );
