@@ -61,16 +61,6 @@ function Footer() {
                   <FaFacebookF size={20} />
                 </a>
               </li>
-              <li>
-                <a
-                  href="mailto:aadeshdevganiya10@gmail.com"
-                  className="text-white hover:text-primary transition"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGoogle size={20} />
-                </a>
-              </li>
             </ul>
           </div>
         </div>
