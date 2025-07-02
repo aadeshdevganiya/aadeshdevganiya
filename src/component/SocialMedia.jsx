@@ -35,18 +35,18 @@ export default function SocialMedia() {
         </h2>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-6 sm:gap-12">
+      <div className="flex gap-6 sm:gap-12 flex-wrap justify-center">
         {icons.map((item, index) => (
-          <Zoom key={index} triggerOnce>
-            <a
-              href={item.href}
-              target="_blank"
-              rel="noreferrer"
-              className="text-white text-7xl sm:text-8xl p-5 rounded-md bg-primary hover:scale-110 transition duration-300"
-            >
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noreferrer"
+            className="text-white text-7xl sm:text-8xl p-5 rounded-md bg-primary hover:scale-110 transition duration-300"
+          >
+            <Zoom key={index} triggerOnce>
               {item.icon}
-            </a>
-          </Zoom>
+            </Zoom>
+          </a>
         ))}
       </div>
     </div>
