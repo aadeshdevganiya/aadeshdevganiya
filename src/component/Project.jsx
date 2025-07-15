@@ -32,7 +32,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="pb-20">
+    <section className="pb-20" id="project">
       <div className="container mx-auto px-3.5">
         <CommonHeading headingname="Projects" />
 

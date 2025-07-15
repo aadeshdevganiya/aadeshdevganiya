@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import profileImg from "../assets/images/profile.png";
 import CommonButton from "./CommonButton";
 
@@ -65,31 +66,46 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link
-                to="#about"
+              <ScrollLink
+                to="about"
+                smooth={true}
+                duration={500}
+                offset={-70}
                 onClick={closeMenu}
-                className="hover:text-primary"
+                className="hover:text-primary cursor-pointer"
+                spy={true}
+                activeClass="text-primary"
               >
                 About
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <Link
-                to="#skills"
+              <ScrollLink
+                to="skills"
+                smooth={true}
+                duration={500}
+                offset={-70}
                 onClick={closeMenu}
-                className="hover:text-primary"
+                className="hover:text-primary cursor-pointer"
+                spy={true}
+                activeClass="text-primary"
               >
                 Skills
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <Link
-                to="#project"
+              <ScrollLink
+                to="project"
+                smooth={true}
+                duration={500}
+                offset={-70}
                 onClick={closeMenu}
-                className="hover:text-primary"
+                className="hover:text-primary cursor-pointer"
+                spy={true}
+                activeClass="text-primary"
               >
                 Project
-              </Link>
+              </ScrollLink>
             </li>
             <div className="block lg:hidden mt-2">
               <CommonButton buttonName="Contact us" />
@@ -98,7 +114,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden lg:block">
-          <CommonButton buttonName="Contact us" />
+          <CommonButton buttonName="Contact us" to="contact" />
         </div>
       </div>
     </nav>
