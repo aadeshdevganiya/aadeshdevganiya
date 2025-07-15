@@ -3,6 +3,8 @@ import Navbar from "./component/Navbar";
 import HomePage from "./component/HomePage";
 import Footer from "./component/Footer";
 import Preloader from "./component/Preloader";
+import Resume from "./component/Resume";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,7 +20,10 @@ function App() {
     <>
       <Navbar />
       <main role="main" className="fade-in">
-        <HomePage />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
       </main>
       <Footer />
     </>

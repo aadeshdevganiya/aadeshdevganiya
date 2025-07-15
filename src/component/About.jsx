@@ -25,7 +25,7 @@ export default function About() {
           role="tablist"
           aria-label="About Section Tabs"
         >
-          <ul className="flex w-full border-b mt-3 flex-nowrap whitespace-nowrap">
+          <ul className="flex w-full border-b  flex-nowrap whitespace-nowrap">
             {tabs.map((tab) => (
               <li key={tab.key} className="flex-1 text-center">
                 <button

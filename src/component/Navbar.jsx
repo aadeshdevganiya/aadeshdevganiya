@@ -66,18 +66,14 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <ScrollLink
-                to="about"
-                smooth={true}
-                duration={500}
-                offset={-70}
+              <Link
+                to="/resume"
                 onClick={closeMenu}
                 className="hover:text-primary cursor-pointer"
-                spy={true}
                 activeClass="text-primary"
               >
-                About
-              </ScrollLink>
+                Resume
+              </Link>
             </li>
             <li>
               <ScrollLink
