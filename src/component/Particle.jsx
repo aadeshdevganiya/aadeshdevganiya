@@ -17,7 +17,8 @@ export default function Particle() {
       options={{
         fullScreen: { enable: false },
         background: {
-          color: { value: "#ffffff" },
+          color: { value: "transperant" },
+          // color: { value: "transperant" },
         },
         particles: {
           number: { value: 50 },

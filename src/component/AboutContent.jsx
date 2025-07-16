@@ -1,20 +1,18 @@
 import { Fade, Slide } from "react-awesome-reveal";
-import "@lottiefiles/lottie-player";
+import { Player } from "@lottiefiles/react-lottie-player"; // Correct import
 
 export default function AboutContent() {
   return (
     <div className="mt-10 flex flex-col md:flex-row items-center gap-10">
       <div className="w-full md:w-5/12">
         <Slide direction="left">
-          <lottie-player
-            src="https://assets5.lottiefiles.com/packages/lf20_iv4dsx3q.json"
-            background="transparent"
-            speed="1"
-            style={{ width: "90%", height: "90%" }}
-            loop
+          {/* Use the correct Player component */}
+          <Player
             autoplay
-            title="Aadesh Devganiya Animation"
-          ></lottie-player>
+            loop
+            src="https://assets5.lottiefiles.com/packages/lf20_iv4dsx3q.json"
+            style={{ width: "90%", height: "90%" }}
+          />
         </Slide>
       </div>
 

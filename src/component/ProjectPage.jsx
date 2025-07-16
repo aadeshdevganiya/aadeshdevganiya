@@ -1,12 +1,11 @@
-import React from "react";
-import { FaEye } from "react-icons/fa";
-import { Link } from "react-router";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import CommonHeading from "./CommonHeading";
 import portfolio from "../assets/images/portfolio.png";
 import karmainfotech from "../assets/images/karmainfotech.png";
 import textutils from "../assets/images/textutils.png";
-import CommonButton from "./CommonButton";
-import CommonHeading from "./CommonHeading";
 import emailsignature from "../assets/images/emailsignature.png";
+import { FaEye } from "react-icons/fa";
 
 const projects = [
   {
@@ -30,18 +29,24 @@ const projects = [
     tech: "HTML, CSS, JavaScript",
     link: "https://karmainfotech.vercel.app/",
   },
-  // {
-  //   title: "Textutils",
-  //   img: textutils,
-  //   desc: "A React-based tool to analyze and transform text—convert cases, remove spaces, count words, and more.",
-  //   tech: "React, CSS",
-  //   link: "https://textutils-smoky-seven.vercel.app/",
-  // },
+  {
+    title: "Textutils",
+    img: textutils,
+    desc: "A React-based tool to analyze and transform text—convert cases, remove spaces, count words, and more.",
+    tech: "React, CSS",
+    link: "https://textutils-smoky-seven.vercel.app/",
+  },
 ];
 
-export default function Projects() {
+export default function ProjectsPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const headerHeight = 70; 
+    window.scrollBy(0, -headerHeight);
+  }, []);
+
   return (
-    <section className="pb-20" id="project">
+    <section className="py-10 sm:py-20">
       <div className="container mx-auto px-3.5">
         <CommonHeading headingname="Projects" />
 
@@ -83,14 +88,6 @@ export default function Projects() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-10 text-center">
-          <CommonButton
-            buttonName="View all"
-            to="/projectpage"
-            scrollLink={false}
-          />
         </div>
       </div>
     </section>

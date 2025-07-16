@@ -90,8 +90,8 @@ export default function Navbar() {
               </ScrollLink>
             </li>
             <li>
-              <ScrollLink
-                to="project"
+              <Link
+                to="/projectpage"
                 smooth={true}
                 duration={500}
                 offset={-70}
@@ -101,16 +101,24 @@ export default function Navbar() {
                 activeClass="text-primary"
               >
                 Project
-              </ScrollLink>
+              </Link>
             </li>
             <div className="block lg:hidden mt-2">
-              <CommonButton buttonName="Contact us" />
+              <CommonButton
+                buttonName="Contact us"
+                to="contact"
+                scrollLink={true}
+              />
             </div>
           </ul>
         </div>
 
         <div className="hidden lg:block">
-          <CommonButton buttonName="Contact us" to="contact" />
+          <CommonButton
+            buttonName="Contact us"
+            to="contact"
+            scrollLink={true}
+          />
         </div>
       </div>
     </nav>
