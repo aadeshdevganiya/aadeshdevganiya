@@ -115,7 +115,7 @@ export default function Navbar() {
 
         <div className="hidden lg:block">
           <CommonButton
-            buttonName="Contact us"
+            buttonName="Contact uss"
             to="contact"
             scrollLink={true}
           />
