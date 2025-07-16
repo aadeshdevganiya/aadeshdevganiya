@@ -4,7 +4,6 @@ import HomePage from "./component/HomePage";
 import Footer from "./component/Footer";
 import Preloader from "./component/Preloader";
 import Resume from "./component/Resume";
-import Blog from "./component/blog";
 import ProjectPage from "./component/ProjectPage";
 import { Route, Routes } from "react-router-dom";
 
@@ -25,7 +24,6 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/blog" element={<Blog />} />
           <Route path="/projectpage" element={<ProjectPage />} />
         </Routes>
       </main>
