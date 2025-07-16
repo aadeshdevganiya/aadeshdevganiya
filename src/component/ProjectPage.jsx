@@ -41,7 +41,7 @@ const projects = [
 export default function ProjectsPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    const headerHeight = 70; 
+    const headerHeight = 70;
     window.scrollBy(0, -headerHeight);
   }, []);
 
