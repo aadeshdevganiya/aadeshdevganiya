@@ -4,36 +4,40 @@
   font-family: "proximanova";
   src: url(assets/fonts/ProximaNova.ttc);
 }
-
+@font-face {
+  font-family: "Photograph-Signature";
+  src: url(assets/fonts/Photograph-Signature.woff);
+}
 @theme {
-  --color-primary: #B13BFF;
+  --color-primary: #b13bff;
   /* --color-secondary: #090040; */
   --color-secondary: #030021;
   --color-white: #ffffff;
-  --color-light: #F3E8FF;
-  --color-yellow: #FFCC00;
-  --font-primary: "proximanova"
+  --color-light: #f3e8ff;
+  --color-yellow: #ffcc00;
+  --font-primary: "proximanova";
+  --font-secondary: "Photograph-Signature";
 }
 
 body {
-  @apply bg-secondary text-white font-primary
+  @apply bg-secondary text-white font-primary;
 }
 
 .social-icons li a svg {
-  @apply bg-white p-1 xl:p-1.5 rounded-md
+  @apply bg-white p-1 xl:p-1.5 rounded-md;
 }
 
 .scrollbar-color-style::-webkit-scrollbar {
-  @apply w-2 h-2
+  @apply w-2 h-2;
 }
 .scrollbar-color-style::-webkit-scrollbar-track {
-  @apply bg-transparent
+  @apply bg-transparent;
 }
 .scrollbar-color-style::-webkit-scrollbar-thumb {
-  @apply bg-primary rounded-full border-2 border-transparent bg-clip-content
+  @apply bg-primary rounded-full border-2 border-transparent bg-clip-content;
 }
 .scrollbar-color-style::-webkit-scrollbar-thumb:hover {
-  @apply bg-primary
+  @apply bg-primary;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -43,5 +47,3 @@ input:-webkit-autofill:focus {
   -webkit-text-fill-color: #ffffff !important;
   transition: background-color 5000s ease-in-out 0s;
 }
-
-

@@ -27,7 +27,7 @@ export default function Navbar() {
               alt="Aadesh Devganiya"
               className="w-auto h-auto max-h-10 object-contain"
             />
-            <h5 className="ml-5 uppercase font-medium text-lg text-white">
+            <h5 className="ml-5 font-medium text-3xl tracking-wide text-white font-secondary">
               Aadesh Devganiya
             </h5>
           </Link>
@@ -76,8 +76,8 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <ScrollLink
-                to="skills"
+              <Link
+                to="Experiance"
                 smooth={true}
                 duration={500}
                 offset={-70}
@@ -86,8 +86,8 @@ export default function Navbar() {
                 spy={true}
                 activeClass="text-primary"
               >
-                Skills
-              </ScrollLink>
+                Experiance
+              </Link>
             </li>
             <li>
               <Link

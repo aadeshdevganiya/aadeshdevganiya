@@ -9,6 +9,7 @@ import profileImg from "../assets/images/profile.png";
 import About from "./About";
 import Project from "./Project";
 import Contact from "./Contact";
+import Experiance from "./Experiance";
 
 const Home = () => {
   return (
@@ -96,6 +97,7 @@ const Home = () => {
       </div>
 
       <About />
+      <Experiance />
       <Project />
       <Contact />
     </>

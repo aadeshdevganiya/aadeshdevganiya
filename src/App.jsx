@@ -6,6 +6,7 @@ import Preloader from "./component/Preloader";
 import Resume from "./component/Resume";
 import ProjectPage from "./component/ProjectPage";
 import { Route, Routes } from "react-router-dom";
+import Experiance from "./component/Experiance";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/experiance" element={<Experiance />} />
           <Route path="/projectpage" element={<ProjectPage />} />
         </Routes>
       </main>
