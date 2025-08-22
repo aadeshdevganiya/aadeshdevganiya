@@ -25,7 +25,7 @@ export default function About() {
           role="tablist"
           aria-label="About Section Tabs"
         >
-          <ul className="flex w-full border-b  flex-nowrap whitespace-nowrap">
+          <ul className="flex w-full border-b flex-nowrap whitespace-nowrap">
             {tabs.map((tab) => (
               <li key={tab.key} className="flex-1 text-center">
                 <button
@@ -48,38 +48,22 @@ export default function About() {
 
         <div className="mt-4">
           {activeTab === "about" && (
-            <div
-              id="tab-panel-about"
-              role="tabpanel"
-              aria-labelledby="tab-about"
-            >
+            <div id="tab-panel-about" role="tabpanel">
               <AboutContent />
             </div>
           )}
           {activeTab === "skills" && (
-            <div
-              id="tab-panel-skills"
-              role="tabpanel"
-              aria-labelledby="tab-skills"
-            >
+            <div id="tab-panel-skills" role="tabpanel">
               <Skills />
             </div>
           )}
           {activeTab === "journey" && (
-            <div
-              id="tab-panel-journey"
-              role="tabpanel"
-              aria-labelledby="tab-journey"
-            >
+            <div id="tab-panel-journey" role="tabpanel">
               <Journey />
             </div>
           )}
           {activeTab === "socialmedia" && (
-            <div
-              id="tab-panel-socialmedia"
-              role="tabpanel"
-              aria-labelledby="socialmedia"
-            >
+            <div id="tab-panel-socialmedia" role="tabpanel">
               <SocialMedia />
             </div>
           )}
