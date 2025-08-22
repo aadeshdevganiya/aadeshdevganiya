@@ -1,5 +1,5 @@
 .scan .fingerprint {
-  background: url(../assets/images/preloader-image.png);
+  background: url(../assets/images/preloader-image.webp);
   background-size: 300px;
 }
 
@@ -10,13 +10,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../assets/images/preloader-before.png);
+  background: url(../assets/images/preloader-before.webp);
   background-size: 300px;
   /* animation: animate 4s ease-in-out infinite; */
 }
 
 @keyframes animate {
-
   0%,
   100% {
     height: 0%;
@@ -34,14 +33,13 @@
   left: 0;
   width: 100%;
   height: 8px;
-  background: #B13BFF;
+  background: #b13bff;
   border-radius: 8px;
-  filter: drop-shadow(0 0 20px #B13BFF) drop-shadow(0 0 60px #B13BFF);
+  filter: drop-shadow(0 0 20px #b13bff) drop-shadow(0 0 60px #b13bff);
   animation: animate_line 3s ease-in-out infinite;
 }
 
 @keyframes animate_line {
-
   0%,
   100% {
     top: 0%;
@@ -57,13 +55,12 @@
   font-size: 2em;
   letter-spacing: 2px;
   margin-top: 20px;
-  color: #B13BFF;
-  filter: drop-shadow(0 0 20px #B13BFF) drop-shadow(0 0 60px #B13BFF);
+  color: #b13bff;
+  filter: drop-shadow(0 0 20px #b13bff) drop-shadow(0 0 60px #b13bff);
   animation: animate_text 0.5s steps(1) infinite;
 }
 
 @keyframes animate_text {
-
   0%,
   100% {
     opacity: 0;
@@ -92,7 +89,6 @@
   }
 
   @keyframes animate_line {
-
     0%,
     100% {
       top: 0%;
