@@ -30,11 +30,8 @@ const Home = () => {
                 </span>
               </span>
               <h1 className="text-4xl sm:text-6xl xl:text-7xl font-bold text-white">
-                Hi, I'm Aadesh Devganiya, a Web Designer & Shopify Developer
+                Hi, I'm Aadesh Devganiya
               </h1>
-              <h2 className="text-2xl sm:text-4xl xl:text-5xl font-semibold text-white">
-                Welcome to my portfolio!
-              </h2>
 
               <div className="text-xl sm:text-2xl text-primary font-semibold">
                 <Typing />
