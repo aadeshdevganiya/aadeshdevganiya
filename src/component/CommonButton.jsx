@@ -7,6 +7,7 @@ export default function CommonButton({ buttonName, to, scrollLink }) {
     return (
       <ScrollLink
         to={to}
+        href="#"
         smooth={true}
         duration={500}
         offset={-70}
@@ -21,6 +22,7 @@ export default function CommonButton({ buttonName, to, scrollLink }) {
   return (
     <Link
       to={to}
+      href="#"
       className="bg-primary px-6 py-3 uppercase text-white text-sm rounded-full font-medium cursor-pointer"
     >
       {buttonName}
