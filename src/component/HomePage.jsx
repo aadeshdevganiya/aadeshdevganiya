@@ -19,7 +19,7 @@ const Home = () => {
         <div className="container mx-auto px-3.5 py-16 sm:py-20">
           <div className="flex flex-col gap-2 md:flex-row items-center">
             <div className="md:w-2/3 w-full text-center md:text-left space-y-4 sm:space-y-6">
-              <span className="text-4xl sm:text-6xl xl:text-7xl font-bold text-white block">
+              <span className="text-3xl sm:text-3xl xl:text-4xl font-bold text-white block">
                 Hi There!{" "}
                 <span
                   role="img"
@@ -29,8 +29,8 @@ const Home = () => {
                   👋🏻
                 </span>
               </span>
-              <h1 className="text-4xl sm:text-6xl xl:text-7xl font-bold text-white">
-                Hi, I'm Aadesh Devganiya
+              <h1 className="text-4xl sm:text-5xl xl:text-6xl font-bold text-white">
+                I'm Aadesh Devganiya
               </h1>
 
               <div className="text-xl sm:text-2xl text-primary font-semibold">
