@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import CommonHeading from "./CommonHeading";
 import portfolio from "../assets/images/portfolio.png";
-import karmainfotech from "../assets/images/karmainfotech.png";
+import karmainfotech from "../assets/images/karmainfotech.webp";
 import textutils from "../assets/images/textutils.png";
-import emailsignature from "../assets/images/emailsignature.png";
+import emailsignature from "../assets/images/emailsignature.webp";
 import { FaEye } from "react-icons/fa";
 
 const projects = [
