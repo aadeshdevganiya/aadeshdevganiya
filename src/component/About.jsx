@@ -48,22 +48,38 @@ export default function About() {
 
         <div className="mt-4">
           {activeTab === "about" && (
-            <div id="tab-panel-about" role="tabpanel">
+            <div
+              id="tab-panel-about"
+              role="tabpanel"
+              aria-labelledby="tab-about"
+            >
               <AboutContent />
             </div>
           )}
           {activeTab === "skills" && (
-            <div id="tab-panel-skills" role="tabpanel">
+            <div
+              id="tab-panel-skills"
+              role="tabpanel"
+              aria-labelledby="tab-skills"
+            >
               <Skills />
             </div>
           )}
           {activeTab === "journey" && (
-            <div id="tab-panel-journey" role="tabpanel">
+            <div
+              id="tab-panel-journey"
+              role="tabpanel"
+              aria-labelledby="tab-journey"
+            >
               <Journey />
             </div>
           )}
           {activeTab === "socialmedia" && (
-            <div id="tab-panel-socialmedia" role="tabpanel">
+            <div
+              id="tab-panel-socialmedia"
+              role="tabpanel"
+              aria-labelledby="socialmedia"
+            >
               <SocialMedia />
             </div>
           )}
