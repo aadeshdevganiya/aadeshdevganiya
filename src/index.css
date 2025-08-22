@@ -2,11 +2,13 @@
 
 @font-face {
   font-family: "proximanova";
-  src: url(assets/fonts/ProximaNova.ttc);
+  src: url(assets/fonts/ProximaNova.woff) format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "Photograph-Signature";
-  src: url(assets/fonts/Photograph-Signature.woff);
+  src: url(assets/fonts/Photograph-Signature.woff) format("woff");
+  font-display: swap;
 }
 @theme {
   --color-primary: #b13bff;
