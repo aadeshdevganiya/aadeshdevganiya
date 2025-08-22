@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 import { Fade } from "react-awesome-reveal";
 import Typing from "../assets/js/typing";
 import Particle from "../assets/js/particle";
-import profileImg from "../assets/images/profile.png";
+import profileImg from "../assets/images/profile.webp";
 import About from "./About";
 import Project from "./Project";
 import Contact from "./Contact";
