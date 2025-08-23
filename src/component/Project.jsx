@@ -1,8 +1,8 @@
 import React from "react";
 import { FaEye } from "react-icons/fa";
 import { Link } from "react-router";
-import portfolio from "../assets/images/portfolio.webp";
-import karmainfotech from "../assets/images/karmainfotech.webp";
+import portfolio from "../assets/images/portfolio.jpg";
+import karmainfotech from "../assets/images/karmainfotech.jpg";
 // import textutils from "../assets/images/textutils.webp";
 import CommonButton from "./CommonButton";
 import CommonHeading from "./CommonHeading";
