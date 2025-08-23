@@ -73,7 +73,7 @@
 
 @media (max-width: 640px) {
   .scan .fingerprint {
-    background: url(../assets/images/preloader-image.png);
+    background: url(../assets/images/preloader-image.webp);
     background-size: 150px;
     background-repeat: no-repeat;
   }

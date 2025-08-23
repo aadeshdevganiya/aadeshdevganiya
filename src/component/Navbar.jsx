@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import profileImg from "../assets/images/profile.png";
+import profileImg from "../assets/images/profile.webp";
 import CommonButton from "./CommonButton";
 
 export default function Navbar() {

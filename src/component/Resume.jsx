@@ -1,5 +1,5 @@
 import React from "react";
-import resumeImage from "../assets/images/Aadeshresume.png";
+import resumeImage from "../assets/images/Aadeshresume.webp";
 
 export default function Resume() {
   return (
