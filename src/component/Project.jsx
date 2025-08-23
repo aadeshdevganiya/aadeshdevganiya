@@ -59,6 +59,8 @@ export default function Projects() {
                 <img
                   src={project.img}
                   alt={project.title}
+                  srcset="portfolio-image-480.webp 480w, portfolio-image-800.webp 800w"
+                  sizes="(max-width: 600px) 480px, 800px"
                   className="w-full h-60 object-cover object-left mt-2 rounded-lg"
                 />
 
