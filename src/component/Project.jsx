@@ -6,7 +6,7 @@ import karmainfotech from "../assets/images/karmainfotech.webp";
 // import textutils from "../assets/images/textutils.webp";
 import CommonButton from "./CommonButton";
 import CommonHeading from "./CommonHeading";
-import emailsignature from "../assets/images/emailsignature.webp";
+import emailsignature from "../assets/images/emailsignature.jpg";
 
 const projects = [
   {
