@@ -27,9 +27,9 @@ export default function Navbar() {
               alt="Aadesh Devganiya"
               className="w-auto h-auto max-h-10 object-contain"
             />
-            <h5 className="ml-5 font-medium text-3xl tracking-wide text-white font-secondary">
+            <h6 className="ml-5 font-medium text-3xl tracking-wide text-white font-secondary">
               Aadesh Devganiya
-            </h5>
+            </h6>
           </Link>
         </div>
 
