@@ -24,7 +24,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center">
             <img
               src={profileImg}
-              alt="Aadesh Devganiya"
+              alt="Profile picture of Aadesh Devganiya"
               className="w-auto h-auto max-h-10 object-contain"
             />
             <h6 className="ml-5 font-medium text-3xl tracking-wide text-white font-secondary">
