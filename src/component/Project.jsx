@@ -52,9 +52,9 @@ export default function Projects() {
               className="relative bg-light border border-primary rounded-xl overflow-hidden group transition-transform duration-300 hover:scale-[1.02]"
             >
               <div className="p-4">
-                <h5 className="text-lg font-semibold text-primary font-[proximanova]">
+                <h3 className="text-lg font-semibold text-primary font-[proximanova]">
                   {project.title}
-                </h5>
+                </h3>
 
                 <img
                   src={project.img}
