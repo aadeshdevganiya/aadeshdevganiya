@@ -60,6 +60,8 @@ export default function Projects() {
                   src={project.img}
                   alt={project.title}
                   className="w-full h-60 object-cover object-left mt-2 rounded-lg"
+                  width={100}
+                  height={100}
                 />
 
                 <div className="absolute top-6 left-0 w-[95%] bg-primary text-white font-semibold text-sm p-4 rounded-r-2xl transform -translate-x-full translate-y-[40%] group-hover:translate-x-0 transition duration-700 flex items-center justify-center text-center z-10 shadow-lg">
