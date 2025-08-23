@@ -27,6 +27,7 @@ function Footer() {
                   className="text-white hover:text-primary transition"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's GitHub Profile"
                 >
                   <AiFillGithub size={20} />
                 </a>
@@ -37,6 +38,7 @@ function Footer() {
                   className="text-white hover:text-primary transition"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's LinkedIn Profile"
                 >
                   <FaLinkedinIn size={20} />
                 </a>
@@ -47,6 +49,7 @@ function Footer() {
                   className="text-white hover:text-primary transition"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's Instagram Profile"
                 >
                   <AiFillInstagram size={20} />
                 </a>
@@ -57,6 +60,7 @@ function Footer() {
                   className="text-white hover:text-primary transition"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's Facebook Profile"
                 >
                   <FaFacebookF size={20} />
                 </a>

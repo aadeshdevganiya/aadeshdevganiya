@@ -43,6 +43,7 @@ const Home = () => {
                     target="_blank"
                     rel="noreferrer"
                     className="text-primary text-2xl xl:text-3xl"
+                    aria-label="Aadesh Devganiya's GitHub Profile"
                   >
                     <AiFillGithub />
                   </a>
@@ -53,6 +54,7 @@ const Home = () => {
                     target="_blank"
                     rel="noreferrer"
                     className="text-primary text-2xl xl:text-3xl"
+                    aria-label="Aadesh Devganiya's LinkedIn Profile"
                   >
                     <FaLinkedinIn />
                   </a>
@@ -63,6 +65,7 @@ const Home = () => {
                     target="_blank"
                     rel="noreferrer"
                     className="text-primary text-2xl xl:text-3xl"
+                    aria-label="Aadesh Devganiya's Instagram Profile"
                   >
                     <AiFillInstagram />
                   </a>
@@ -73,6 +76,7 @@ const Home = () => {
                     target="_blank"
                     rel="noreferrer"
                     className="text-primary text-2xl xl:text-3xl"
+                    aria-label="Aadesh Devganiya's Facebook Profile"
                   >
                     <FaFacebookF />
                   </a>
