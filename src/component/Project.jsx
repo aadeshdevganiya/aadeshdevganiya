@@ -49,10 +49,10 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="relative bg-light border border-primary rounded-xl overflow-hidden group transition-transform duration-300 hover:scale-[1.02]"
+              className="relative bg-primary border border-primary rounded-xl overflow-hidden group transition-transform duration-300 hover:scale-[1.02]"
             >
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-primary font-[proximanova]">
+                <h3 className="text-lg font-semibold text-white font-[proximanova]">
                   {project.title}
                 </h3>
 
