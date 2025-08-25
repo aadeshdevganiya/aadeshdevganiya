@@ -30,6 +30,7 @@ export default function About() {
               <li key={tab.key} className="flex-1 text-center">
                 <button
                   role="tab"
+                  id={`tab-${tab.key}`} // Unique ID for each tab
                   aria-selected={activeTab === tab.key}
                   aria-controls={`tab-panel-${tab.key}`}
                   onClick={() => setActiveTab(tab.key)}
@@ -48,22 +49,38 @@ export default function About() {
 
         <div className="mt-4">
           {activeTab === "about" && (
-            <div id="tab-panel-about" role="tabpanel">
+            <div
+              id="tab-panel-about"
+              role="tabpanel"
+              aria-labelledby="tab-about" // Linking the tab panel with its corresponding tab
+            >
               <AboutContent />
             </div>
           )}
           {activeTab === "skills" && (
-            <div id="tab-panel-skills" role="tabpanel">
+            <div
+              id="tab-panel-skills"
+              role="tabpanel"
+              aria-labelledby="tab-skills" // Linking the tab panel with its corresponding tab
+            >
               <Skills />
             </div>
           )}
           {activeTab === "journey" && (
-            <div id="tab-panel-journey" role="tabpanel">
+            <div
+              id="tab-panel-journey"
+              role="tabpanel"
+              aria-labelledby="tab-journey" // Linking the tab panel with its corresponding tab
+            >
               <Journey />
             </div>
           )}
           {activeTab === "socialmedia" && (
-            <div id="tab-panel-socialmedia" role="tabpanel">
+            <div
+              id="tab-panel-socialmedia"
+              role="tabpanel"
+              aria-labelledby="tab-socialmedia" // Linking the tab panel with its corresponding tab
+            >
               <SocialMedia />
             </div>
           )}
