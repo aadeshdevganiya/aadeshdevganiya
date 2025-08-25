@@ -83,7 +83,7 @@ const Home = () => {
                 </li>
               </ul>
             </div>
-            <div className="md:w-1/3 w-full mt-10 md:mt-0 flex justify-center">
+            <div className="md:w-1/3 w-full max-w-xs max-h-xs mt-10 md:mt-0 flex justify-center">
               <Tilt>
                 <Fade>
                   <img
@@ -91,7 +91,7 @@ const Home = () => {
                     alt="Aadesh Devganiya"
                     width={320}
                     height={320}
-                    className=" rounded-lg shadow-lg"
+                    className="rounded-lg shadow-lg"
                     fetchpriority="high"
                   />
                 </Fade>
