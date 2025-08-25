@@ -36,7 +36,7 @@ export default function About() {
                   className={`w-full rounded-tl-sm rounded-tr-sm py-2 px-4 text-base sm:text-lg font-bold cursor-pointer transition-colors duration-200 ${
                     activeTab === tab.key
                       ? "text-white bg-purple-700" // Active tab: white text, dark purple background for better contrast
-                      : "text-gray-800 bg-transparent hover:bg-purple-600 hover:text-white" // Inactive tab: dark gray text, transparent bg, hover effect
+                      : "text-white bg-transparent hover:bg-purple-600 hover:text-white" // Inactive tab: dark gray text, transparent bg, hover effect
                   }`}
                 >
                   {tab.name}
