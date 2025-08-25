@@ -25,7 +25,7 @@ export default function About() {
           role="tablist"
           aria-label="About Section Tabs"
         >
-          <ul className="flex w-full border-b flex-nowrap whitespace-nowrap">
+          <ul className="flex w-full border-b border-b-light flex-nowrap whitespace-nowrap">
             {tabs.map((tab) => (
               <li key={tab.key} className="flex-1 text-center">
                 <button
@@ -33,10 +33,10 @@ export default function About() {
                   aria-selected={activeTab === tab.key}
                   aria-controls={`tab-panel-${tab.key}`}
                   onClick={() => setActiveTab(tab.key)}
-                  className={`w-full py-2 px-4 text-base sm:text-lg font-bold cursor-pointer transition-colors duration-200 ${
+                  className={`w-full rounded-tl-sm rounded-tr-sm py-2 px-4 text-base sm:text-lg font-bold cursor-pointer transition-colors duration-200 ${
                     activeTab === tab.key
-                      ? "text-white bg-primary rounded-tl-sm rounded-tr-sm"
-                      : "text-primary bg-transparent hover:bg-primary hover:text-white"
+                      ? "text-primary bg-light " // improved contrast for active tab
+                      : "text-white bg-transparent hover:bg-primary hover:text-white"
                   }`}
                 >
                   {tab.name}
