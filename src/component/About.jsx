@@ -35,7 +35,7 @@ export default function About() {
                   onClick={() => setActiveTab(tab.key)}
                   className={`w-full py-2 px-4 text-base sm:text-lg font-bold cursor-pointer transition-colors duration-200 ${
                     activeTab === tab.key
-                      ? "text-white bg-primary rounded-tl-sm rounded-tr-sm" // improved contrast for active tab
+                      ? "text-white bg-primary rounded-tl-sm rounded-tr-sm"
                       : "text-primary bg-transparent hover:bg-primary hover:text-white"
                   }`}
                 >
