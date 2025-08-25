@@ -12,7 +12,7 @@ export default function CommonButton({ buttonName, to, scrollLink }) {
         duration={500}
         offset={-70}
         spy={true}
-        className="bg-primary px-6 py-3 uppercase text-white text-sm rounded-full font-medium cursor-pointer"
+        className="bg-[#6200ea] px-6 py-3 uppercase text-white text-sm rounded-full font-medium cursor-pointer"
       >
         {buttonName}
       </ScrollLink>
