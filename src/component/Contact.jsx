@@ -108,7 +108,7 @@ export default function ContactUs() {
 
             <button
               type="submit"
-              className="bg-primary px-6 py-3 w-fit uppercase text-white text-sm rounded-full font-medium inline-flex justify-center items-center gap-2.5 cursor-pointer"
+              className="bg-[#6200ea] px-6 py-3 w-fit uppercase text-white text-sm rounded-full font-medium inline-flex justify-center items-center gap-2.5 cursor-pointer"
             >
               Submit{" "}
               <AiOutlineSend className="text-xl -rotate-[30deg] -translate-y-1 translate-x-1" />
