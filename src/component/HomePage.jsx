@@ -92,6 +92,7 @@ const Home = () => {
                     width={320}
                     height={320}
                     className=" rounded-lg shadow-lg"
+                    fetchpriority="high"
                   />
                 </Fade>
               </Tilt>
