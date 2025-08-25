@@ -77,7 +77,7 @@ export default function Projects() {
                     href={project.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-primary text-lg transition-transform duration-300 group-hover:translate-x-[6px] flex justify-center gap-2 items-center font-[proximanova]"
+                    className="text-[#6200ea] text-lg transition-transform duration-300 group-hover:translate-x-[6px] flex justify-center gap-2 items-center font-[proximanova]"
                   >
                     View <FaEye />
                   </a>
