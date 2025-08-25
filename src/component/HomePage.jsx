@@ -89,9 +89,9 @@ const Home = () => {
                   <img
                     src={profileImg}
                     alt="Aadesh Devganiya"
-                    width={100}
-                    height={100}
-                    className="w-full max-w-xs rounded-lg shadow-lg"
+                    width={320}
+                    height={320}
+                    className=" rounded-lg shadow-lg"
                   />
                 </Fade>
               </Tilt>
