@@ -20,39 +20,38 @@ export default function About() {
       <div className="container mx-auto px-3.5">
         <CommonHeading headingname="About Me" />
 
+        {/* Tab List */}
         <div
-          className="overflow-x-auto pb-1 scrollbar-color-style"
+          className="flex w-full border-b border-b-light flex-nowrap whitespace-nowrap overflow-x-auto pb-1 scrollbar-color-style"
           role="tablist"
           aria-label="About Section Tabs"
         >
-          <ul className="flex w-full border-b border-b-light flex-nowrap whitespace-nowrap">
-            {tabs.map((tab) => (
-              <li key={tab.key} className="flex-1 text-center">
-                <button
-                  role="tab"
-                  id={`tab-${tab.key}`} // Unique ID for each tab
-                  aria-selected={activeTab === tab.key}
-                  aria-controls={`tab-panel-${tab.key}`}
-                  onClick={() => setActiveTab(tab.key)}
-                  className={`w-full rounded-tl-sm rounded-tr-sm py-2 px-4 text-base sm:text-lg font-bold cursor-pointer transition-colors duration-200 ${
-                    activeTab === tab.key
-                      ? "text-white bg-purple-700" // Active tab: white text, dark purple background for better contrast
-                      : "text-white bg-transparent hover:bg-purple-600 hover:text-white" // Inactive tab: dark gray text, transparent bg, hover effect
-                  }`}
-                >
-                  {tab.name}
-                </button>
-              </li>
-            ))}
-          </ul>
+          {tabs.map((tab) => (
+            <button
+              key={tab.key}
+              role="tab"
+              id={`tab-${tab.key}`}
+              aria-selected={activeTab === tab.key}
+              aria-controls={`tab-panel-${tab.key}`}
+              onClick={() => setActiveTab(tab.key)}
+              className={`flex-1 text-center rounded-tl-sm rounded-tr-sm py-2 px-4 text-base sm:text-lg font-bold cursor-pointer transition-colors duration-200 ${
+                activeTab === tab.key
+                  ? "text-white bg-purple-700"
+                  : "text-white bg-transparent hover:bg-purple-600 hover:text-white"
+              }`}
+            >
+              {tab.name}
+            </button>
+          ))}
         </div>
 
+        {/* Tab Panels */}
         <div className="mt-4">
           {activeTab === "about" && (
             <div
               id="tab-panel-about"
               role="tabpanel"
-              aria-labelledby="tab-about" // Linking the tab panel with its corresponding tab
+              aria-labelledby="tab-about"
             >
               <AboutContent />
             </div>
@@ -61,7 +60,7 @@ export default function About() {
             <div
               id="tab-panel-skills"
               role="tabpanel"
-              aria-labelledby="tab-skills" // Linking the tab panel with its corresponding tab
+              aria-labelledby="tab-skills"
             >
               <Skills />
             </div>
@@ -70,7 +69,7 @@ export default function About() {
             <div
               id="tab-panel-journey"
               role="tabpanel"
-              aria-labelledby="tab-journey" // Linking the tab panel with its corresponding tab
+              aria-labelledby="tab-journey"
             >
               <Journey />
             </div>
@@ -79,7 +78,7 @@ export default function About() {
             <div
               id="tab-panel-socialmedia"
               role="tabpanel"
-              aria-labelledby="tab-socialmedia" // Linking the tab panel with its corresponding tab
+              aria-labelledby="tab-socialmedia"
             >
               <SocialMedia />
             </div>
