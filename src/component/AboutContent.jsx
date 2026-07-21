@@ -24,7 +24,7 @@ export default function AboutContent() {
               and I am a{" "}
               <b className="text-primary">Web Designer and Shopify Developer</b>{" "}
               currently working at{" "}
-              <b className="text-primary">Chameleon Infotech</b> in Surat.
+              <b className="text-primary">Dynamic Dreamz</b> in Surat.
             </p>
 
             <p>
