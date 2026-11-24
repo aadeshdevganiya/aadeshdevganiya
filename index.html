@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title & Description -->
+    <title>Aadesh Devganiya – Web Designer & Shopify Developer</title>
+    <meta name="description"
+      content="Official portfolio of Aadesh Devganiya – Creative Web Designer & Frontend Developer building sleek websites using React, Vite & Tailwind CSS." />
+
+    <!-- Keywords & Author -->
+    <meta name="keywords"
+      content="Aadesh Devganiya, Web Designer, Frontend Developer, React, Vite, Tailwind, Portfolio, JavaScript, UI/UX , Aadesh , Adesh Devganiya , aadi devganiya , aadi , Devganiya" />
+    <meta name="author" content="Aadesh Devganiya" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aadeshdevganiya.vercel.app/" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title"
+      content="Aadesh Devganiya – Web Designer & Shopify Developer" />
+    <meta property="og:description"
+      content="Explore the professional portfolio of Aadesh Devganiya – frontend developer and web designer building modern websites with React and Tailwind CSS." />
+    <meta property="og:image"
+      content="https://aadeshdevganiya.vercel.app/og-image.png" />
+    <meta property="og:url" content="https://aadeshdevganiya.vercel.app/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+      content="Aadesh Devganiya – Web Designer Portfolio" />
+    <meta name="twitter:description"
+      content="Explore the portfolio of Aadesh Devganiya, a creative frontend web developer building clean and modern UI using React & Tailwind CSS." />
+    <meta name="twitter:image"
+      content="https://aadeshdevganiya.vercel.app/og-image.png" />
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification"
+      content="ltaXAurXiRgqQhU14XiYKBks59v18D07ETqwbt9zf5o" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/profile.png" />
+
+    <!-- Skip the preloader when navigating between pages of this site -->
+    <script>
+      (function () {
+        try {
+          if (sessionStorage.getItem("skipPreloader") === "1") {
+            sessionStorage.removeItem("skipPreloader");
+            document.documentElement.classList.add("no-preload");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Vertical timeline styles (same stylesheet the React component used) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-vertical-timeline-component@3.6.0/style.min.css" />
+
+    <!-- Site styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Preloader (shown for 3s on first load) -->
+    <div id="preloader">
+      <div class="preloader__inner">
+        <div class="scan">
+          <div class="fingerprint"></div>
+          <h3>Scanning....</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="app">
+
+      <nav class="nav">
+        <div class="container nav__inner">
+          <div class="nav__brand">
+            <a href="index.html" class="nav__logo-link">
+              <img
+                src="images/profile.webp"
+                alt="Profile picture of Aadesh Devganiya"
+                class="nav__logo"
+              />
+              <h6 class="nav__name">
+                Aadesh Devganiya
+              </h6>
+            </a>
+          </div>
+
+          <div
+            id="menu-toggle"
+            class="nav__toggle"
+          >
+            <span class="nav__bar nav__bar--top"></span>
+            <span class="nav__bar nav__bar--mid"></span>
+            <span class="nav__bar nav__bar--bottom"></span>
+          </div>
+
+          <div
+            id="menu-panel"
+            class="nav__menu"
+          >
+            <ul class="nav__list">
+              <li><a href="index.html" class="nav__link">Home</a></li>
+              <li><a href="resume.html" class="nav__link">Resume</a></li>
+              <li><a href="experiance.html" class="nav__link">Experiance</a></li>
+              <li><a href="projectpage.html" class="nav__link">Project</a></li>
+              <li class="nav__cta-mobile">
+                <a href="index.html#contact" data-scroll="contact" class="btn">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__cta-desktop">
+            <a href="index.html#contact" data-scroll="contact" class="btn">Contact us</a>
+          </div>
+        </div>
+      </nav>
+
+      <main role="main" class="fade-in">
+
+      <div id="home" class="hero">
+        <!-- (The original <Particle /> used the old react-tsparticles v1 "params" API, which v2 ignores, so no particles were drawn.) -->
+        <div class="container hero__inner">
+          <div class="hero__row">
+            <div class="hero__content">
+              <span class="hero__greeting">
+                Hi There!
+                <span role="img" aria-labelledby="wave" class="hero__wave">👋🏻</span>
+              </span>
+              <h1 class="hero__title">
+                I'm Aadesh Devganiya
+              </h1>
+
+              <div class="hero__role">
+                <div id="typing" class="Typewriter"></div>
+              </div>
+              <ul class="hero__socials">
+                <li>
+                  <a
+                    href="https://github.com/aadeshdevganiya"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="hero__social-link"
+                    aria-label="Aadesh Devganiya's GitHub Profile"
+                  >
+                    <iconify-icon icon="ant-design:github-filled"></iconify-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/aadesh-devganiya/"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="hero__social-link"
+                    aria-label="Aadesh Devganiya's LinkedIn Profile"
+                  >
+                    <iconify-icon icon="fa-brands:linkedin-in"></iconify-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/_aadesh__devganiyaa__24_?igsh=MXZ5NnJuYTVxN2k2YQ=="
+                    target="_blank"
+                    rel="noreferrer"
+                    class="hero__social-link"
+                    aria-label="Aadesh Devganiya's Instagram Profile"
+                  >
+                    <iconify-icon icon="ant-design:instagram-filled"></iconify-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/aadesh.devganiya"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="hero__social-link"
+                    aria-label="Aadesh Devganiya's Facebook Profile"
+                  >
+                    <iconify-icon icon="fa-brands:facebook-f"></iconify-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="hero__photo">
+              <div class="tilt">
+                <div data-reveal="fade">
+                  <img
+                    src="images/profile.webp"
+                    alt="Aadesh Devganiya"
+                    width="320"
+                    height="320"
+                    class="hero__img"
+                    fetchpriority="high"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+
+          <!-- Tab List -->
+          <div
+            class="tabs"
+            role="tablist"
+            aria-label="About Section Tabs"
+          >
+            <button
+              role="tab"
+              id="tab-about"
+              data-tab="about"
+              aria-selected="true"
+              aria-controls="tab-panel-about"
+              class="tab"
+            >
+              About
+            </button>
+            <button
+              role="tab"
+              id="tab-skills"
+              data-tab="skills"
+              aria-selected="false"
+              aria-controls="tab-panel-skills"
+              class="tab"
+            >
+              Skills
+            </button>
+            <button
+              role="tab"
+              id="tab-journey"
+              data-tab="journey"
+              aria-selected="false"
+              aria-controls="tab-panel-journey"
+              class="tab"
+            >
+              Journey
+            </button>
+            <button
+              role="tab"
+              id="tab-socialmedia"
+              data-tab="socialmedia"
+              aria-selected="false"
+              aria-controls="tab-panel-socialmedia"
+              class="tab"
+            >
+              Social Media
+            </button>
+          </div>
+
+          <!-- Tab Panels -->
+          <div class="tab-panels">
+            <div
+              id="tab-panel-about"
+              role="tabpanel"
+              aria-labelledby="tab-about"
+            >
+              <div class="about__row">
+                <div class="about__lottie">
+                  <div data-reveal="left">
+                    <div id="about-lottie" style="width: 90%; height: 90%"></div>
+                  </div>
+                </div>
+
+                <div class="about__text-wrap">
+                  <div data-reveal="fade" data-duration="3000">
+                    <div class="about__text">
+                      <p>
+                        My name is <b class="highlight">AD Aadesh Devganiya</b>,
+                        and I am a
+                        <b class="highlight">Web Designer and Shopify Developer</b>
+                        currently working at
+                        <b class="highlight">Dynamic Dreamz</b> in Surat..
+                      </p>
+
+                      <p>
+                        I specialize in building modern, responsive websites using
+                        <b class="highlight">
+                          HTML, CSS, JavaScript, React, Bootstrap, and Tailwind CSS
+                        </b>
+                        . I also have extensive experience with
+                        <b class="highlight">Shopify</b> development, including
+                        theme customization and performance optimization.
+                      </p>
+
+                      <p>
+                        I’m passionate about crafting clean, accessible, and
+                        high-performing user interfaces using
+                        <b class="highlight">
+                          modern frontend tools and best practices
+                        </b>
+                        .
+                      </p>
+
+                      <p>
+                        In my free time, I enjoy exploring new design trends, learning
+                        emerging web technologies, and
+                        <b class="highlight">
+                          building creative, user-focused digital products
+                        </b>
+                        .
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="tab-panel-skills"
+              role="tabpanel"
+              aria-labelledby="tab-skills"
+              hidden
+            >
+              <section class="skills">
+                <div class="skills__grid">
+                  <div class="skill-card">
+                    <div class="skill-card__icon-wrap">
+                      <img src="https://cdn.freebiesupply.com/logos/large/2x/html-5-logo-png-transparent.png" alt="HTML5" class="skill-card__icon" />
+                    </div>
+                    <h3 class="skill-card__name">HTML5</h3>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card__icon-wrap">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="CSS3" class="skill-card__icon" />
+                    </div>
+                    <h3 class="skill-card__name">CSS3</h3>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card__icon-wrap">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="skill-card__icon" />
+                    </div>
+                    <h3 class="skill-card__name">JavaScript</h3>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card__icon-wrap">
+                      <img src="https://mildaintrainings.com/wp-content/uploads/2017/11/react-logo.png" alt="React" class="skill-card__icon" />
+                    </div>
+                    <h3 class="skill-card__name">React</h3>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card__icon-wrap">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap" class="skill-card__icon" />
+                    </div>
+                    <h3 class="skill-card__name">Bootstrap</h3>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card__icon-wrap">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="skill-card__icon" />
+                    </div>
+                    <h3 class="skill-card__name">Tailwind CSS</h3>
+                  </div>
+                  <div class="skill-card">
+                    <div class="skill-card__icon-wrap">
+                      <img src="https://cdn.worldvectorlogo.com/logos/shopify-2.svg" alt="Shopify" class="skill-card__icon" />
+                    </div>
+                    <h3 class="skill-card__name">Shopify</h3>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div
+              id="tab-panel-journey"
+              role="tabpanel"
+              aria-labelledby="tab-journey"
+              hidden
+            >
+              <div class="journey__body">
+                <div class="timeline-head">
+                  <h2 class="timeline-title">
+                    Qualification Journey
+                  </h2>
+                </div>
+
+          <div class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
+
+        <div class="vertical-timeline-element vertical-timeline-element--left">
+          <span style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-icon shadow-size-small is-hidden"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>
+          <div style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-content is-hidden">
+            <div style="border-right: 7px solid #B13BFF" class="vertical-timeline-element-content-arrow"></div>
+            <h4 class="timeline-job">Secondary School Certificate</h4>
+            <h5 class="timeline-company">I P Savani School</h5>
+            <p class="timeline-desc">Studied 10th grade and achieved a GPA of 8 in SSC Examination.</p>
+            <span class="vertical-timeline-element-date">2019 - 2020</span>
+          </div>
+        </div>
+
+        <div class="vertical-timeline-element vertical-timeline-element--right">
+          <span style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-icon shadow-size-small is-hidden"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>
+          <div style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-content is-hidden">
+            <div style="border-right: 7px solid #B13BFF" class="vertical-timeline-element-content-arrow"></div>
+            <h4 class="timeline-job">Diploma in Engineering</h4>
+            <h5 class="timeline-company">Government Polytechnic Valsad</h5>
+            <p class="timeline-desc">Completed diploma in engineering with a CGPA of 8.23.</p>
+            <span class="vertical-timeline-element-date">2020 - 2023</span>
+          </div>
+        </div>
+
+        <div class="vertical-timeline-element vertical-timeline-element--left">
+          <span style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-icon shadow-size-small is-hidden"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>
+          <div style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-content is-hidden">
+            <div style="border-right: 7px solid #B13BFF" class="vertical-timeline-element-content-arrow"></div>
+            <h4 class="timeline-job">Training</h4>
+            <h5 class="timeline-company">Creative Design &amp; Multimedia Institute</h5>
+            <p class="timeline-desc">Successfully completed Web Design course with practical projects.</p>
+            <span class="vertical-timeline-element-date">2023 - 2024</span>
+          </div>
+        </div>
+
+        <div class="vertical-timeline-element vertical-timeline-element--right vertical-timeline-element--no-children">
+          <span style="background: #ffffff; color: #B13BFF" class="vertical-timeline-element-icon shadow-size-small is-hidden"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span>
+          <div class="vertical-timeline-element-content is-hidden">
+            <div class="vertical-timeline-element-content-arrow"></div>
+            <span class="vertical-timeline-element-date"></span>
+          </div>
+        </div>
+          </div>
+              </div>
+            </div>
+            <div
+              id="tab-panel-socialmedia"
+              role="tabpanel"
+              aria-labelledby="tab-socialmedia"
+              hidden
+            >
+              <div class="social__body">
+                <div class="social__head">
+                  <h2 class="timeline-title">
+                    Connect with me
+                  </h2>
+                </div>
+
+                <div class="social-grid">
+                  <a
+                    href="https://www.instagram.com/_aadesh__devganiyaa__24_?igsh=MXZ5NnJuYTVxN2k2YQ=="
+                    target="_blank"
+                    rel="noreferrer"
+                    class="social-card"
+                  >
+                    <div data-reveal="zoom" data-once><iconify-icon icon="ant-design:instagram-outlined"></iconify-icon></div>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/aadesh.devganiya?mibextid=ZbWKwL#"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="social-card"
+                  >
+                    <div data-reveal="zoom" data-once><iconify-icon icon="ant-design:facebook-filled"></iconify-icon></div>
+                  </a>
+                  <a
+                    href="https://github.com/aadeshdevganiya"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="social-card"
+                  >
+                    <div data-reveal="zoom" data-once><iconify-icon icon="ant-design:github-filled"></iconify-icon></div>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/aadesh-devganiya/"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="social-card"
+                  >
+                    <div data-reveal="zoom" data-once><iconify-icon icon="ant-design:linkedin-filled"></iconify-icon></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <div class="timeline-section">
+      <div class="timeline-head">
+        <h2 class="section-title">Experiance</h2>
+      </div>
+
+      <div class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
+
+        <div class="vertical-timeline-element vertical-timeline-element--left">
+          <span style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-icon shadow-size-small is-hidden"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>
+          <div style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-content is-hidden">
+            <div style="border-right: 7px solid #B13BFF" class="vertical-timeline-element-content-arrow"></div>
+            <h4 class="timeline-job timeline-job--wide">Web Designer</h4>
+            <h5 class="timeline-company">Creative Design &amp; Multimedia Institute</h5>
+            <p class="timeline-desc">Training in web design, HTML, CSS, and front-end development.</p>
+            <span class="vertical-timeline-element-date">2023 - 2024</span>
+          </div>
+        </div>
+
+        <div class="vertical-timeline-element vertical-timeline-element--right">
+          <span style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-icon shadow-size-small is-hidden"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>
+          <div style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-content is-hidden">
+            <div style="border-right: 7px solid #B13BFF" class="vertical-timeline-element-content-arrow"></div>
+            <h4 class="timeline-job timeline-job--wide">Web Designer / Front-end Developer</h4>
+            <h5 class="timeline-company">Codelink Infotech</h5>
+            <p class="timeline-desc">Worked on various web design projects, focusing on improving skills in HTML, CSS, JavaScript, and modern frameworks like React.</p>
+            <span class="vertical-timeline-element-date">April 2024 - December 2024</span>
+          </div>
+        </div>
+
+        <div class="vertical-timeline-element vertical-timeline-element--left">
+          <span style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-icon shadow-size-small is-hidden"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>
+          <div style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-content is-hidden">
+            <div style="border-right: 7px solid #B13BFF" class="vertical-timeline-element-content-arrow"></div>
+            <h4 class="timeline-job timeline-job--wide">Web Designer / Shopify Developer</h4>
+            <h5 class="timeline-company">Chameleon Infotech</h5>
+            <p class="timeline-desc">Contributed to Shopify store development, customized themes, and improved user experience through efficient front-end design.</p>
+            <span class="vertical-timeline-element-date">January 2025 - August 2025</span>
+          </div>
+        </div>
+
+        <div class="vertical-timeline-element vertical-timeline-element--right">
+          <span style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-icon shadow-size-small is-hidden"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"></path></svg></span>
+          <div style="background: #B13BFF; color: #ffffff" class="vertical-timeline-element-content is-hidden">
+            <div style="border-right: 7px solid #B13BFF" class="vertical-timeline-element-content-arrow"></div>
+            <h4 class="timeline-job timeline-job--wide">Shopify Developer / Web Designer</h4>
+            <h5 class="timeline-company">Dynamic Dreamz</h5>
+            <p class="timeline-desc">Designing and customizing Shopify themes, optimizing websites for speed and performance, and enhancing user experience for e-commerce platforms.</p>
+            <span class="vertical-timeline-element-date">September 2025 - Present</span>
+          </div>
+        </div>
+
+        <div class="vertical-timeline-element vertical-timeline-element--left vertical-timeline-element--no-children">
+          <span style="background: #ffffff; color: #B13BFF" class="vertical-timeline-element-icon shadow-size-small is-hidden"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium" focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span>
+          <div class="vertical-timeline-element-content is-hidden">
+            <div class="vertical-timeline-element-content-arrow"></div>
+            <span class="vertical-timeline-element-date"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <section class="projects" id="project">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+
+          <div class="projects__grid">
+
+          <div class="project-card">
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                Email Signature
+              </h3>
+
+              <img
+                src="images/emailsignature.jpg"
+                alt="Email Signature"
+                class="project-card__img" width="100" height="100"
+              />
+
+              <div class="project-card__badge">
+                Explore my work, skills, and achievements in a concise and visual way.
+              </div>
+
+              <div class="project-card__tag">
+                Tailwind CSS
+              </div>
+
+              <div class="project-card__footer">
+                <a
+                  href="https://aadeshdevganiya.github.io/Email-signature/src/index.html"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="project-card__link"
+                >
+                  View <iconify-icon icon="fa-solid:eye"></iconify-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+           <div class="project-card">
+              <div class="project-card__body">
+                <h3 class="project-card__title">
+                  House of Cosmo
+                </h3>
+
+                <img
+                  src="images/House-of-Cosmo.webp"
+                  alt="House of cosmo
+                  class="project-card__img" width="100" height="100"
+                />
+
+                <div class="project-card__badge">
+                  Explore my work, skills, and achievements in a concise and visual way.
+                </div>
+
+                <div class="project-card__tag">
+                  Tailwind CSS
+                </div>
+
+                <div class="project-card__footer">
+                  <a
+                    href="https://houseofcosmo.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="project-card__link"
+                  >
+                    View <iconify-icon icon="fa-solid:eye"></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          <div class="project-card">
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                Personal Portfolio
+              </h3>
+
+              <img
+                src="images/portfolio.jpg"
+                alt="Personal Portfolio"
+                class="project-card__img" width="100" height="100"
+              />
+
+              <div class="project-card__badge">
+                Explore my work, skills, and achievements in a concise and visual way.
+              </div>
+
+              <div class="project-card__tag">
+                React, Tailwind CSS
+              </div>
+
+              <div class="project-card__footer">
+                <a
+                  href="https://aadeshdevganiya.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="project-card__link"
+                >
+                  View <iconify-icon icon="fa-solid:eye"></iconify-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                KarmaInfotech
+              </h3>
+
+              <img
+                src="images/karmainfotech.jpg"
+                alt="KarmaInfotech"
+                class="project-card__img" width="100" height="100"
+              />
+
+              <div class="project-card__badge">
+                User-friendly interface – Clean, responsive design built with HTML, CSS, and JavaScript.
+              </div>
+
+              <div class="project-card__tag">
+                HTML, CSS, JavaScript
+              </div>
+
+              <div class="project-card__footer">
+                <a
+                  href="https://karmainfotech.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="project-card__link"
+                >
+                  View <iconify-icon icon="fa-solid:eye"></iconify-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="projects__more">
+            <a href="projectpage.html" class="btn">View all</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Contact us</h2>
+
+          <div class="contact__grid">
+            <form
+              id="contact-form"
+              class="contact__form"
+            >
+              <div>
+                <label
+                  for="name"
+                  class="contact__label"
+                >
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                  class="contact__field"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="email"
+                  class="contact__label"
+                >
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  class="contact__field"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="contact__label"
+                >
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  placeholder="Enter your message"
+                  class="contact__field contact__field--textarea"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn--icon"
+              >
+                Submit
+                <iconify-icon icon="ant-design:send-outlined" class="btn__icon"></iconify-icon>
+              </button>
+            </form>
+
+            <div class="contact__info">
+
+            <div class="contact__item">
+              <div class="contact__icon">
+                <iconify-icon icon="feather:at-sign"></iconify-icon>
+              </div>
+              <a href="mailto:aadeshdevganiya10@gmail.com" class="contact__link">aadeshdevganiya10@gmail.com</a>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__icon">
+                <iconify-icon icon="feather:phone"></iconify-icon>
+              </div>
+              <a href="tel:+916355569615" class="contact__link">+91 6355569615</a>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__icon">
+                <iconify-icon icon="heroicons-outline:location-marker"></iconify-icon>
+              </div>
+              <a href="https://maps.app.goo.gl/6V6WkiuaTNARAjcd6" target="_blank" rel="noopener noreferrer" class="contact__link">Surat, Gujarat</a>
+            </div>
+
+              <div class="contact__map">
+                <iframe
+                  title="Contact Map"
+                  class="contact__map-frame"
+                  allowfullscreen
+                  fetchpriority="high"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.41709466476!2d72.73988496746377!3d21.15934029861164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1750846493615!5m2!1sen!2sin"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__row">
+            <div>
+              <h3 class="footer__text">
+                Designed and Developed by AD Aadesh Devganiya
+              </h3>
+            </div>
+            <div>
+              <h3 class="footer__text">
+                © <span data-year>2026</span> AD Aadesh Devganiya
+              </h3>
+            </div>
+            <div>
+              <ul class="footer__socials">
+              <li>
+                <a
+                  href="https://github.com/aadeshdevganiya"
+                  class="footer__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's GitHub Profile"
+                >
+                  <iconify-icon icon="ant-design:github-filled" width="20" height="20"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/aadesh-devganiya/"
+                  class="footer__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's LinkedIn Profile"
+                >
+                  <iconify-icon icon="fa-brands:linkedin-in" width="20" height="20"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/_aadesh__devganiyaa__24_?igsh=MXZ5NnJuYTVxN2k2YQ=="
+                  class="footer__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's Instagram Profile"
+                >
+                  <iconify-icon icon="ant-design:instagram-filled" width="20" height="20"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/aadesh.devganiya"
+                  class="footer__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's Facebook Profile"
+                >
+                  <iconify-icon icon="fa-brands:facebook-f" width="20" height="20"></iconify-icon>
+                </a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.22.0/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.13.0/build/player/lottie.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
