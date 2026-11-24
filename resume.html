@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title & Description -->
+    <title>Aadesh Devganiya – Web Designer & Shopify Developer</title>
+    <meta name="description"
+      content="Official portfolio of Aadesh Devganiya – Creative Web Designer & Frontend Developer building sleek websites using React, Vite & Tailwind CSS." />
+
+    <!-- Keywords & Author -->
+    <meta name="keywords"
+      content="Aadesh Devganiya, Web Designer, Frontend Developer, React, Vite, Tailwind, Portfolio, JavaScript, UI/UX , Aadesh , Adesh Devganiya , aadi devganiya , aadi , Devganiya" />
+    <meta name="author" content="Aadesh Devganiya" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aadeshdevganiya.vercel.app/" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title"
+      content="Aadesh Devganiya – Web Designer & Shopify Developer" />
+    <meta property="og:description"
+      content="Explore the professional portfolio of Aadesh Devganiya – frontend developer and web designer building modern websites with React and Tailwind CSS." />
+    <meta property="og:image"
+      content="https://aadeshdevganiya.vercel.app/og-image.png" />
+    <meta property="og:url" content="https://aadeshdevganiya.vercel.app/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+      content="Aadesh Devganiya – Web Designer Portfolio" />
+    <meta name="twitter:description"
+      content="Explore the portfolio of Aadesh Devganiya, a creative frontend web developer building clean and modern UI using React & Tailwind CSS." />
+    <meta name="twitter:image"
+      content="https://aadeshdevganiya.vercel.app/og-image.png" />
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification"
+      content="ltaXAurXiRgqQhU14XiYKBks59v18D07ETqwbt9zf5o" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/profile.png" />
+
+    <!-- Skip the preloader when navigating between pages of this site -->
+    <script>
+      (function () {
+        try {
+          if (sessionStorage.getItem("skipPreloader") === "1") {
+            sessionStorage.removeItem("skipPreloader");
+            document.documentElement.classList.add("no-preload");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Site styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Preloader (shown for 3s on first load) -->
+    <div id="preloader">
+      <div class="preloader__inner">
+        <div class="scan">
+          <div class="fingerprint"></div>
+          <h3>Scanning....</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="app">
+
+      <nav class="nav">
+        <div class="container nav__inner">
+          <div class="nav__brand">
+            <a href="index.html" class="nav__logo-link">
+              <img
+                src="images/profile.webp"
+                alt="Profile picture of Aadesh Devganiya"
+                class="nav__logo"
+              />
+              <h6 class="nav__name">
+                Aadesh Devganiya
+              </h6>
+            </a>
+          </div>
+
+          <div
+            id="menu-toggle"
+            class="nav__toggle"
+          >
+            <span class="nav__bar nav__bar--top"></span>
+            <span class="nav__bar nav__bar--mid"></span>
+            <span class="nav__bar nav__bar--bottom"></span>
+          </div>
+
+          <div
+            id="menu-panel"
+            class="nav__menu"
+          >
+            <ul class="nav__list">
+              <li><a href="index.html" class="nav__link">Home</a></li>
+              <li><a href="resume.html" class="nav__link">Resume</a></li>
+              <li><a href="experiance.html" class="nav__link">Experiance</a></li>
+              <li><a href="projectpage.html" class="nav__link">Project</a></li>
+              <li class="nav__cta-mobile">
+                <a href="index.html#contact" data-scroll="contact" class="btn">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__cta-desktop">
+            <a href="index.html#contact" data-scroll="contact" class="btn">Contact us</a>
+          </div>
+        </div>
+      </nav>
+
+      <main role="main" class="fade-in">
+
+      <section class="resume" id="resume">
+        <div class="container resume__inner">
+          <h2 class="resume__title">
+            Resume
+          </h2>
+          <p class="resume__text">
+            Explore my professional background and accomplishments by downloading
+            my detailed resume. It highlights my skills, experience, and
+            qualifications.
+          </p>
+          <div class="resume__actions">
+            <a
+              href="Aadesh_Resume.pdf"
+              download
+              class="btn btn--primary"
+            >
+              Download Resume
+            </a>
+          </div>
+          <div class="resume__preview">
+            <img
+              src="images/Aadeshresume.webp"
+              alt="Resume Image"
+              class="resume__img"
+            />
+          </div>
+        </div>
+      </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__row">
+            <div>
+              <h3 class="footer__text">
+                Designed and Developed by AD Aadesh Devganiya
+              </h3>
+            </div>
+            <div>
+              <h3 class="footer__text">
+                © <span data-year>2026</span> AD Aadesh Devganiya
+              </h3>
+            </div>
+            <div>
+              <ul class="footer__socials">
+              <li>
+                <a
+                  href="https://github.com/aadeshdevganiya"
+                  class="footer__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's GitHub Profile"
+                >
+                  <iconify-icon icon="ant-design:github-filled" width="20" height="20"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/aadesh-devganiya/"
+                  class="footer__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's LinkedIn Profile"
+                >
+                  <iconify-icon icon="fa-brands:linkedin-in" width="20" height="20"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/_aadesh__devganiyaa__24_?igsh=MXZ5NnJuYTVxN2k2YQ=="
+                  class="footer__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's Instagram Profile"
+                >
+                  <iconify-icon icon="ant-design:instagram-filled" width="20" height="20"></iconify-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/aadesh.devganiya"
+                  class="footer__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's Facebook Profile"
+                >
+                  <iconify-icon icon="fa-brands:facebook-f" width="20" height="20"></iconify-icon>
+                </a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
