@@ -1,0 +1,76 @@
+import React from "react";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { FaLinkedinIn, FaFacebookF, FaGoogle } from "react-icons/fa";
+
+function Footer() {
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="border-t border-light text-white py-6">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row justify-between items-center text-center space-y-4 md:space-y-0">
+          <div>
+            <h3 className="text-sm md:text-base">
+              Designed and Developed by AD Aadesh Devganiya
+            </h3>
+          </div>
+          <div>
+            <h3 className="text-sm md:text-base">
+              © {year} AD Aadesh Devganiya
+            </h3>
+          </div>
+          <div>
+            <ul className="flex space-x-4 justify-center">
+              <li>
+                <a
+                  href="https://github.com/aadeshdevganiya"
+                  className="text-white hover:text-primary transition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's GitHub Profile"
+                >
+                  <AiFillGithub size={20} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/aadesh-devganiya/"
+                  className="text-white hover:text-primary transition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's LinkedIn Profile"
+                >
+                  <FaLinkedinIn size={20} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/_aadesh__devganiyaa__24_?igsh=MXZ5NnJuYTVxN2k2YQ=="
+                  className="text-white hover:text-primary transition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's Instagram Profile"
+                >
+                  <AiFillInstagram size={20} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/aadesh.devganiya"
+                  className="text-white hover:text-primary transition"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aadesh Devganiya's Facebook Profile"
+                >
+                  <FaFacebookF size={20} />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
